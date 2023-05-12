@@ -57,7 +57,7 @@ const DevHome: React.FC = () => {
       className="w-full h-screen bg-[#191a1e] text-[#e8e7e7]"
     >
       {/* container */}
-      <div className="flex max-w-[1000px] ml-40 flex-col justify-center h-full">
+      <div className="hidden md:flex max-w-[1000px] ml-40 flex-col justify-center h-full">
         <p className="text-[#e8e7e7] font-bold pl-1">
           OODI <span className="text-[#3CD6EB]">Koodille</span>
         </p>
