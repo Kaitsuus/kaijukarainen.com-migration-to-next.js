@@ -12,8 +12,11 @@ import {
   FaYoutube
 } from 'react-icons/fa';
 
+interface FooterProps {
+    linkDestination: string;
+}
 
-const Footer: React.FC = () => {
+const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
   const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
   return (
@@ -25,7 +28,7 @@ const Footer: React.FC = () => {
       <div className="md:flex flex-row justify-center gap-5">
         <div className="pb-8 pt-8">
           <p className="text-4xl font-bold inline border-b-4 border-[#3CD6EB]">
-            Yhteystiedot
+            {t('contact-me')}
           </p>
           <ul className="py-4 font-semibold">
             <li>
@@ -119,7 +122,7 @@ const Footer: React.FC = () => {
           </p>
         </a>
         <p>Copyright © 2023 Kai Jukarainen</p>
-        <Link to="Dev"smooth={true} duration={500} >
+        <Link to={linkDestination} smooth={true} duration={500} >
           <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-[#3CD6EB] z-10">
             Up
             <span className="group-hover:rotate-[-90deg] duration-300 group-hover:cursor-pointer hover:text-[#3CD6EB] z-10">

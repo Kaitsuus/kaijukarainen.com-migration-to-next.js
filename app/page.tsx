@@ -6,7 +6,7 @@ import DevHome from '@/dev/Home';
 import DevAbout from '@/dev/About'
 import DevSkills from '@/dev/Skills'
 import DevWork from '@/dev/Work'
-import DevFooter from '@/dev/Footer'
+import Footer from '../components/Footer'
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <DevAbout />
         <DevSkills />
         <DevWork />
-        <DevFooter />
+        <Footer linkDestination="Dev"/>
       </I18nextProvider>
     </div>
   )
