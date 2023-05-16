@@ -5,7 +5,7 @@ import { Link } from 'react-scroll'
 import backgroundImage from '../public/assets/background.png';
 import { useTranslation } from 'react-i18next';
 
-const Home = () => {
+const Home: React.FC = () => {
   const { t } = useTranslation();
   const bgStyle: React.CSSProperties = {
     backgroundImage: `url(${backgroundImage.src})`,
@@ -32,7 +32,7 @@ const Home = () => {
               <br />
               {t('wpHeroTextXl2')}</p>
         <div>
-        <Link to="wordpressVideo" smooth={true} duration={500}>
+        <Link to="Info" smooth={true} duration={500}>
               <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-2 ">
                 {t('wpMore')}
                 <span className="group-hover:rotate-90 duration-300">

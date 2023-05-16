@@ -3,6 +3,7 @@ Project Structure
 - /app: Files related to rendering pages
 - /components: Utility components used in pages
 - /dev: Contains development-related files
+- /wordpress: Contains wordpress-related files
 - /utils: Utility scripts for development tasks
     - /utils/translations: Contains translation files for internationalization
 - /public: Basic public folder for Next.js
