@@ -11,13 +11,18 @@ const navItems = [
     { to: "footer", label: "Contact" },
   ];
 
+  const videoProps = {
+    videoId: 'WxatI1d4HGg',
+    videoTitle: 'Sopisiko WordPress sinun yrityksellesi?'
+  };
+
   export default function page() {
   return (
     <div>
         <I18nextProvider i18n={i18n}>
             <NavBar navItems={navItems}/>
             <Home />
-            <Info />
+            <Info {...videoProps}/>
             <Footer linkDestination="wordpress"/>
         </I18nextProvider>
     </div>

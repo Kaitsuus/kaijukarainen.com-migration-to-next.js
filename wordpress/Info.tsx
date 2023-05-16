@@ -5,11 +5,10 @@ import YouTube from 'react-youtube';
 
 interface WpVideoProps {
     videoId: string;
-    videoHeader: string;
-    videoText: string;
+    videoTitle: string;
   }
 
-  const WpVideo: React.FC<WpVideoProps> = ({ videoId, videoHeader, videoText }): JSX.Element => {
+  const WpVideo: React.FC<WpVideoProps> = ({ videoId, videoTitle }): JSX.Element => {
   const { t } = useTranslation();
   const opts = {
     height: '490',
@@ -32,10 +31,10 @@ interface WpVideoProps {
         </div>
         <div className='w-full h-full pt-5'>
           <YouTube
-            videoId="WxatI1d4HGg"
+            videoId={videoId}
             className="w-full h-full shadow-md shadow-[#3CD6EB]"
             opts={opts}
-            title="Would WordPress be suitable for your business?"
+            title={videoTitle}
           />
         </div>
      </div>
