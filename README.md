@@ -7,6 +7,7 @@ Project Structure
 - /utils: Utility scripts for development tasks
     - /utils/translations: Contains translation files for internationalization
 - /public: Basic public folder for Next.js
+    - /assets: Contains developement-related assets
 
 
 

@@ -32,7 +32,7 @@ const Home: React.FC = () => {
               <br />
               {t('wpHeroTextXl2')}</p>
         <div>
-        <Link to="Info" smooth={true} duration={500}>
+        <Link to="info2" smooth={true} duration={500}>
               <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-2 ">
                 {t('wpMore')}
                 <span className="group-hover:rotate-90 duration-300">
