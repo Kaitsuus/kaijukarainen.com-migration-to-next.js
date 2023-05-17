@@ -1,7 +1,7 @@
 'use client';
 import { I18nextProvider } from 'react-i18next';
 import { CookiesProvider } from 'react-cookie';
-import i18n from '../../utils/i18n';
+import i18n from '@/utils/i18n';
 import Home from '@/wordpress/Home';
 import Info from '@/wordpress/Info';
 import Info2 from '@/wordpress/Info-2';
