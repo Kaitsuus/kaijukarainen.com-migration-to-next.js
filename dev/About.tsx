@@ -1,16 +1,13 @@
-"use client"
+'use client';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div
-      id="about"
-      className="w-full h-full bg-[#191a1e] text-[#e8e7e7] "
-    >
+    <div id="about" className="w-full h-full bg-[#191a1e] text-[#e8e7e7] ">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-start w-full h-full">
         <div className="pt-20">
           <div className="pb-8 ">
@@ -36,9 +33,9 @@ const About: React.FC = () => {
                 </span>
               </button>
             </Link>
+          </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };

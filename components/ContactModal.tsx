@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 const url = process.env.URL;
@@ -83,7 +83,6 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
       <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
     </>
   );
-
-}
+};
 
 export default Modal;

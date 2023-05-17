@@ -1,19 +1,19 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Modal from '../components/ContactModal';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import {
   FaGithub,
   FaLinkedin,
   FaFacebook,
   FaInstagram,
-  FaYoutube
+  FaYoutube,
 } from 'react-icons/fa';
 
 interface FooterProps {
-    linkDestination: string;
+  linkDestination: string;
 }
 
 const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
@@ -122,7 +122,7 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
           </p>
         </a>
         <p>Copyright © 2023 Kai Jukarainen</p>
-        <Link to={linkDestination} smooth={true} duration={500} >
+        <Link to={linkDestination} smooth={true} duration={500}>
           <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-[#3CD6EB] z-10">
             Up
             <span className="group-hover:rotate-[-90deg] duration-300 group-hover:cursor-pointer hover:text-[#3CD6EB] z-10">
@@ -131,7 +131,9 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
           </p>
         </Link>
       </div>
-      {showModal ? <Modal showModal={showModal} setShowModal={setShowModal}  /> : null}
+      {showModal ? (
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+      ) : null}
     </footer>
   );
 };

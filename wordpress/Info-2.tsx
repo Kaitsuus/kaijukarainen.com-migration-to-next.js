@@ -1,10 +1,10 @@
-"use client"
+'use client';
 import { useTranslation } from 'react-i18next';
-import Image from 'next/image'
+import Image from 'next/image';
 import WpImg from '../public/assets/wphands.png';
 
 const Info2: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div
       id="info2"
@@ -17,23 +17,25 @@ const Info2: React.FC = () => {
             <h1 className="text-4xl sm:text-4xl font-bold text-[#fafafa]">
               {t('wpMainTextHeader')}
             </h1>
-            <p className="text-xl text-[#fafafa] truncate whitespace-pre-wrap max-w-[1000px]">
-              {t('wpMainText')}
-              <br />
-              <br />
-              {t('wpMainTextp2')}
-              <br />
-              <br />
-              {t('wpMainTextp3')}
-              <br />
-              <br />
-              {t('wpMainTextp4')}
-            </p>
+            <div className="text-xl py-4">
+              <p className="text-xl text-[#fafafa] truncate whitespace-pre-wrap max-w-[1000px]">
+                {t('wpMainText')}
+                <br />
+                <br />
+                {t('wpMainTextp2')}
+                <br />
+                <br />
+                {t('wpMainTextp3')}
+                <br />
+                <br />
+                {t('wpMainTextp4')}
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Info2
+export default Info2;

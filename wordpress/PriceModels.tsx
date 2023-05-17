@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Modal from '../components/ContactModal'
+import Modal from '../components/ContactModal';
 
 const PriceModels: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -44,7 +44,7 @@ const PriceModels: React.FC = () => {
               </ul>
               <p className="text-lg font-bold text-[#3CD6EB]">{t('askMore')}</p>
               <p className="mb-4">{t('alv')}</p>
-              <div className='pt-5'></div>
+              <div className="pt-5"></div>
             </div>
             {/* Kattava-container */}
             <div
@@ -72,7 +72,7 @@ const PriceModels: React.FC = () => {
               </ul>
               <p className="text-lg font-bold text-[#3CD6EB]">{t('askMore')}</p>
               <p>{t('alv')}</p>
-              <div className='pt-5'></div>
+              <div className="pt-5"></div>
             </div>
             {/* Kauppa-container */}
             <div
@@ -122,15 +122,17 @@ const PriceModels: React.FC = () => {
               </ul>
               <p className="text-lg font-bold text-[#3CD6EB]">{t('askMore')}</p>
               <p className="text-[#fafafa] mb-4">{t('alv')}</p>
-              <div className='pt-5'></div>
+              <div className="pt-5"></div>
             </div>
           </div>
         </div>
         <p className="text-lg z-10 ">{t('pricingText')}</p>
       </div>
-      {showModal ? <Modal showModal={showModal} setShowModal={setShowModal}  /> : null}
+      {showModal ? (
+        <Modal showModal={showModal} setShowModal={setShowModal} />
+      ) : null}
     </div>
   );
-}
+};
 
-export default PriceModels
+export default PriceModels;

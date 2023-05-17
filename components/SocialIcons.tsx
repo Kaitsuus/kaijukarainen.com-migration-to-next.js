@@ -1,4 +1,10 @@
-import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from 'react-icons/fa';
 
 interface SocialIconsProps {
   linkedin: string;
@@ -8,7 +14,13 @@ interface SocialIconsProps {
   instagram: string;
 }
 
-function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialIconsProps): JSX.Element {
+function SocialIcons({
+  linkedin,
+  github,
+  youtube,
+  facebook,
+  instagram,
+}: SocialIconsProps): JSX.Element {
   return (
     <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
       <ul>
@@ -19,7 +31,7 @@ function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialI
             target="_blank"
             rel="noreferrer"
           >
-            Linkedin <FaLinkedin size={30} className='mr-4'/>
+            Linkedin <FaLinkedin size={30} className="mr-4" />
           </a>
         </li>
         <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]">
@@ -29,7 +41,7 @@ function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialI
             target="_blank"
             rel="noreferrer"
           >
-            Github <FaGithub size={30} className='mr-4'/>
+            Github <FaGithub size={30} className="mr-4" />
           </a>
         </li>
         <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#fb3958]">
@@ -39,7 +51,7 @@ function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialI
             target="_blank"
             rel="noreferrer"
           >
-            Youtube <FaYoutube size={30} className='mr-4'/>
+            Youtube <FaYoutube size={30} className="mr-4" />
           </a>
         </li>
         <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
@@ -49,7 +61,7 @@ function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialI
             target="_blank"
             rel="noreferrer"
           >
-            Facebook <FaFacebook size={30} className='mr-4'/>
+            Facebook <FaFacebook size={30} className="mr-4" />
           </a>
         </li>
         <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#fb3958]">
@@ -59,7 +71,7 @@ function SocialIcons({ linkedin, github, youtube, facebook, instagram }: SocialI
             target="_blank"
             rel="noreferrer"
           >
-            Instagram <FaInstagram size={30} className='mr-4'/>
+            Instagram <FaInstagram size={30} className="mr-4" />
           </a>
         </li>
       </ul>

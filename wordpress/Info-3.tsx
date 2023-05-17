@@ -1,14 +1,11 @@
-"use client"
-import Image from 'next/image'
+'use client';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 
 const Info3: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <div
-      id="info3"
-      className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10"
-    >
+    <div id="info3" className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 pt-10 flex flex-col justify-start w-full">
         <div>
@@ -17,11 +14,13 @@ const Info3: React.FC = () => {
           </p>
           <div className="w-full grid grid-cols-1 sm:grid-cols-4 gap-4 text-center py-8">
             <div className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10">
-              <Image src="/assets/laptop.png"
+              <Image
+                src="/assets/laptop.png"
                 width={80}
                 height={80}
                 alt="LaptopImg"
-                className='mx-auto mt-1'/>
+                className="mx-auto mt-1"
+              />
               <p className="my-4 mx-1 text-lg ">
                 <strong>{t('wpModernStyleHeader')}</strong>
                 <br />
@@ -29,11 +28,13 @@ const Info3: React.FC = () => {
               </p>
             </div>
             <div className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10">
-            <Image src="/assets/search.png"
+              <Image
+                src="/assets/search.png"
                 width={80}
                 height={80}
                 alt="searchIcon"
-                className='mx-auto mt-1'/>
+                className="mx-auto mt-1"
+              />
               <p className="my-4 mx-1 text-lg text-[#fafafa]">
                 <strong>{t('wpResposiveHeader')}</strong>
                 <br />
@@ -41,11 +42,13 @@ const Info3: React.FC = () => {
               </p>
             </div>
             <div className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10">
-            <Image src="/assets/phone.png"
+              <Image
+                src="/assets/phone.png"
                 width={80}
                 height={80}
                 alt="phoneIcon"
-                className='mx-auto '/>
+                className="mx-auto "
+              />
               <p className="my-4 mx-1 text-lg text-[#fafafa]">
                 <strong>{t('SeoHeader')}</strong>
                 <br />
@@ -53,11 +56,13 @@ const Info3: React.FC = () => {
               </p>
             </div>
             <div className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10">
-            <Image src="/assets/wp.png"
+              <Image
+                src="/assets/wp.png"
                 width={80}
                 height={80}
                 alt="WordPressIcon"
-                className='mx-auto mt-1'/>
+                className="mx-auto mt-1"
+              />
               <p className="my-4 mx-1 text-lg text-[#fafafa]">
                 <strong>{t('wpManagementHeader')}</strong>
                 <br />
@@ -68,7 +73,7 @@ const Info3: React.FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Info3
+export default Info3;

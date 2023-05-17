@@ -1,13 +1,12 @@
-"use client"
+'use client';
 import React, { useState, useEffect } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import backgroundImage from '../public/assets/background.png';
 import { useTranslation } from 'react-i18next';
 
-
 const DevHome: React.FC = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation();
   const [text, setText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
 
@@ -52,7 +51,7 @@ const DevHome: React.FC = () => {
 
   return (
     <div
-      id='Dev'
+      id="Dev"
       style={bgStyle}
       className="w-full h-screen bg-[#191a1e] text-[#e8e7e7]"
     >

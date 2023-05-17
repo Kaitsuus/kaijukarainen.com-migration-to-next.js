@@ -1,7 +1,7 @@
-"use client"
+'use client';
 import React, { useState, useEffect } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import backgroundImage from '../public/assets/background.png';
 import { useTranslation } from 'react-i18next';
 
@@ -25,21 +25,21 @@ const Home: React.FC = () => {
           OODI <span className="text-[#3CD6EB]">Koodille</span>
         </p>
         <h1 className="text-7xl font-bold">{t('wpHero')}</h1>
-        <h2 className="text-7xl  font-bold">
-        </h2>
+        <h2 className="text-7xl  font-bold"></h2>
         <p className="py-4 ml-2 text-xl max-w-[800px]">
-              {t('wpHeroTextXl1')}
-              <br />
-              {t('wpHeroTextXl2')}</p>
+          {t('wpHeroTextXl1')}
+          <br />
+          {t('wpHeroTextXl2')}
+        </p>
         <div>
-        <Link to="info2" smooth={true} duration={500}>
-              <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-2 ">
-                {t('wpMore')}
-                <span className="group-hover:rotate-90 duration-300">
-                  <HiArrowNarrowRight className="ml-3" />
-                </span>
-              </button>
-            </Link>
+          <Link to="info2" smooth={true} duration={500}>
+            <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-2 ">
+              {t('wpMore')}
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

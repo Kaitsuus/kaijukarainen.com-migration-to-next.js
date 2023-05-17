@@ -7,13 +7,13 @@ import fi from './translations/fi.json';
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
-    fi: { translation: fi }
+    fi: { translation: fi },
   },
   lng: 'fi',
   fallbackLng: 'fi',
   interpolation: {
-    escapeValue: false
-  }
+    escapeValue: false,
+  },
 });
 
 export default i18n;

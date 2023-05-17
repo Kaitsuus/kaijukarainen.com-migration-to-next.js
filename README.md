@@ -1,16 +1,13 @@
-Project Structure
-----------------
+## Project Structure
+
 - /app: Files related to rendering pages
 - /components: Utility components used in pages
 - /dev: Contains development-related files
 - /wordpress: Contains wordpress-related files
 - /utils: Utility scripts for development tasks
-    - /utils/translations: Contains translation files for internationalization
+  - /utils/translations: Contains translation files for internationalization
 - /public: Basic public folder for Next.js
-    - /assets: Contains developement-related assets
-
-
-
+  - /assets: Contains developement-related assets
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
