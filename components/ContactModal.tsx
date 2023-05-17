@@ -38,6 +38,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
               </svg>
             </button>
             <form
+              id="Contact"
               method="POST"
               action={`https://getform.io/f/${url}`}
               className="flex flex-col max-w-[350px] w-full z-10 text-center"
