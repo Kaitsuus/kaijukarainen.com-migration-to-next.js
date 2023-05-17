@@ -5,6 +5,7 @@ import Home from '@/wordpress/Home';
 import Info from '@/wordpress/Info';
 import Info2 from '@/wordpress/Info-2';
 import Info3 from '@/wordpress/Info-3';
+import PriceModel from '@/wordpress/PriceModels';
 import Footer from '@/components/Footer';
 import NavBar from '@/components/Navbar';
 
@@ -27,6 +28,7 @@ const navItems = [
             <Info2 />
             <Info {...videoProps}/>
             <Info3 />
+            <PriceModel />
             <Footer linkDestination="wordpress"/>
         </I18nextProvider>
     </div>
