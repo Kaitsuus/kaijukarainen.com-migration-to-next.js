@@ -61,7 +61,29 @@ const DevHome: React.FC = () => {
           OODI <span className="text-[#3CD6EB]">Koodille</span>
         </p>
         <h1 className="text-7xl font-bold text-[#e8e7e7]">Kai Jukarainen</h1>
-        <h2 className="text-7xl  font-bold text-[#e8e7e7]">
+        <h2 className="text-7xl font-bold text-[#e8e7e7]">
+          {text}
+          <span className="opacity-0 animate-pulse">_</span>
+        </h2>
+        <p className="text-[#fafafa] py-4 max-w-[700px]">{t('homePara')}</p>
+        <div>
+          <Link to="about" smooth={true} duration={500}>
+            <button className="text-[#fafafa] font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500">
+              {t('aboutButton')}
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
+        </div>
+      </div>
+      {/* mobile container */}
+      <div className="md:hidden flex mx-5 flex-col justify-center h-full">
+        <p className="text-[#e8e7e7] font-bold pl-1">
+          OODI <span className="text-[#3CD6EB]">Koodille</span>
+        </p>
+        <h1 className="text-4xl font-bold text-[#e8e7e7]">Kai Jukarainen</h1>
+        <h2 className="text-2xl font-bold text-[#e8e7e7]">
           {text}
           <span className="opacity-0 animate-pulse">_</span>
         </h2>
