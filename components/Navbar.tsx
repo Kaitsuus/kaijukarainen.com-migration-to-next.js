@@ -36,7 +36,9 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
     }
   };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 z-50 text-[#e8e7e7] bg-transparent">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 z-50 text-[#e8e7e7] bg-transparent"
+    data-testid="navbar"
+    >
       {/* logo */}
       <div>
         <Image

@@ -127,7 +127,7 @@ const PriceModels: React.FC = () => {
             </div>
           </div>
         </div>
-      <div className="text-lg z-10 ">
+      <div className="text-lg">
       <h1>{t('pricingText')}</h1>
       <iframe
         src={url}
