@@ -127,15 +127,15 @@ const PriceModels: React.FC = () => {
             </div>
           </div>
         </div>
-      <div className="text-lg">
-      <h1>{t('pricingText')}</h1>
-      <iframe
-        src={url}
-        width="100%"
-        height="800"
-        style={{ border: "none", overflow: "hidden" }}
-      ></iframe>
-      </div>
+        <div className="text-lg">
+          <h1>{t('pricingText')}</h1>
+          <iframe
+            src={url}
+            width="100%"
+            height="800"
+            style={{ border: 'none', overflow: 'hidden' }}
+          ></iframe>
+        </div>
       </div>
       {showModal ? (
         <Modal showModal={showModal} setShowModal={setShowModal} />

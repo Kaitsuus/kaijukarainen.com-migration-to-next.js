@@ -1,5 +1,7 @@
 ## Project Structure
 
+- /**mocks**: mocks for unit testing
+- /**test**: unit tests
 - /app: Files related to rendering pages
 - /components: Utility components used in pages
 - /dev: Contains development-related files
