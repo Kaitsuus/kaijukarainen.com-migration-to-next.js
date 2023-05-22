@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Modal from '../components/ContactModal';
+const url = process.env.BOOKINGS_URL;
 
 const PriceModels: React.FC = () => {
   const { t } = useTranslation();
@@ -126,7 +127,15 @@ const PriceModels: React.FC = () => {
             </div>
           </div>
         </div>
-        <p className="text-lg z-10 ">{t('pricingText')}</p>
+      <div className="text-lg z-10 ">
+      <h1>{t('pricingText')}</h1>
+      <iframe
+        src={url}
+        width="100%"
+        height="800"
+        style={{ border: "none", overflow: "hidden" }}
+      ></iframe>
+      </div>
       </div>
       {showModal ? (
         <Modal showModal={showModal} setShowModal={setShowModal} />

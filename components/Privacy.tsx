@@ -19,13 +19,13 @@ const FAQModel: React.FC = () => {
       id="privacy"
       className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10 pb-20 pt-20"
     >
-      <div className="max-w-[1000px] p-4 flex mx-auto flex-col justify-center h-full">
+      <div className="flex md:max-w-[1000px] w-full p-4 md:mx-auto mx-1 flex-col md:justify-center h-full">
         <table>
           <thead>
             <tr>
               <th>
                 <div className="py-10">
-                  <p className="text-4xl font-bold inline border-b-4 text-[#fafafa] border-[#3CD6EB]">
+                  <p className="md:text-4xl text-xl font-bold inline border-b-4 text-[#fafafa] border-[#3CD6EB]">
                     {t('privacyHead')}
                   </p>
                 </div>
@@ -36,13 +36,13 @@ const FAQModel: React.FC = () => {
             {data().map((row) => (
               <tr
                 key={row.title}
-                className="border-b-4 text-2xl text-[#fafafa] font-bold border-[#3CD6EB]"
+                className="border-b-4 md:text-2xl text-sm text-[#fafafa] font-bold border-[#3CD6EB]"
               >
                 <td className="px-4 py-2">
                   <div>
                     {row.title}
                     <br />
-                    <span className="text-[#fafafa] text-xl font-normal">
+                    <span className="text-[#fafafa] md:text-xl text-sm font-normal">
                       {row.content}
                     </span>
                   </div>
