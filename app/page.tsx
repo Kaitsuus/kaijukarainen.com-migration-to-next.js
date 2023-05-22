@@ -1,7 +1,6 @@
 'use client';
 import { I18nextProvider } from 'react-i18next';
 import { CookiesProvider } from 'react-cookie';
-import Head from 'next/head';
 import i18n from '@/utils/i18n';
 import DevHome from '@/dev/Home';
 import DevAbout from '@/dev/About';
@@ -21,16 +20,6 @@ const navItems = [
 export default function Home() {
   return (
     <div>
-      <Head>
-        <meta
-          name="description"
-          content="Tervetuloa kaijukarainen.com verkkosivuille. Näillä verkkosivuilla esittelen töitäni ja taitojani ja tarjoan palveluitani"
-        />
-        <meta
-          name="keywords"
-          content="software developer, developer, web designer, frontend developement, wordpress developement, full stack developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset"
-        />
-      </Head>
       <CookiesProvider>
         <CookieConsent />
         <I18nextProvider i18n={i18n}>
