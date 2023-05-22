@@ -1,0 +1,34 @@
+[
+  {
+    "src": "/assets/react.png",
+    "title": "React"
+  },
+  {
+    "src": "/assets/firebase.png",
+    "title": "Firebase"
+  },
+  {
+    "src": "/assets/mongo.png",
+    "title": "MongoDB"
+  },
+  {
+    "src": "/assets/tailwind.png",
+    "title": "Tailwind"
+  },
+  {
+    "src": "/assets/node.png",
+    "title": "NodeJs"
+  },
+  {
+    "src": "/assets/javascript.png",
+    "title": "Javascript"
+  },
+  {
+    "src": "/assets/github.png",
+    "title": "GitHub"
+  },
+  {
+    "src": "/assets/java.png",
+    "title": "Java"
+  }
+]

@@ -14,7 +14,6 @@ const FAQModel: React.FC = () => {
     return FiData;
   };
 
-
   return (
     <div
       id="privacy"
@@ -25,22 +24,27 @@ const FAQModel: React.FC = () => {
           <thead>
             <tr>
               <th>
-                <div className='py-10'>
-                <p className="text-4xl font-bold inline border-b-4 text-[#fafafa] border-[#3CD6EB]">
-                  {t('privacyHead')}
-                </p>
+                <div className="py-10">
+                  <p className="text-4xl font-bold inline border-b-4 text-[#fafafa] border-[#3CD6EB]">
+                    {t('privacyHead')}
+                  </p>
                 </div>
               </th>
             </tr>
           </thead>
           <tbody>
             {data().map((row) => (
-              <tr key={row.title} className="border-b-4 text-2xl text-[#fafafa] font-bold border-[#3CD6EB]">
+              <tr
+                key={row.title}
+                className="border-b-4 text-2xl text-[#fafafa] font-bold border-[#3CD6EB]"
+              >
                 <td className="px-4 py-2">
                   <div>
                     {row.title}
                     <br />
-                    <span className="text-[#fafafa] text-xl font-normal">{row.content}</span>
+                    <span className="text-[#fafafa] text-xl font-normal">
+                      {row.content}
+                    </span>
                   </div>
                 </td>
               </tr>

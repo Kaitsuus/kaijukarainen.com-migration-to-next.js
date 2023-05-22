@@ -1,0 +1,20 @@
+[
+  {
+    "src": "/assets/kjs.png",
+    "title": "kaijukarainen.com",
+    "subTitle": "migration to next.js/ts",
+    "linkUrl": "https://github.com/Kaitsuus/kaijukarainen.com-migration-to-next.js"
+  },
+  {
+    "src": "/assets/fullstack.png",
+    "title": "Full Stack Open",
+    "subTitle": "",
+    "linkUrl": "https://github.com/Kaitsuus/FullStackOpen22"
+  },
+  {
+    "src": "/assets/UiMock.png",
+    "title": "Caesar Cipher",
+    "subTitle": "Mobile puzzles",
+    "linkUrl": "https://github.com/Kaitsuus/MasterCipher-React-native"
+  }
+]
