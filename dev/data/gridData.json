@@ -12,9 +12,9 @@
     "linkUrl": "https://github.com/Kaitsuus/FullStackOpen22"
   },
   {
-    "src": "/assets/UiMock.png",
-    "title": "Caesar Cipher",
-    "subTitle": "Mobile puzzles",
-    "linkUrl": "https://github.com/Kaitsuus/MasterCipher-React-native"
+    "src": "/assets/apumoc.png",
+    "title": "APU-App",
+    "subTitle": "Menekkilaskurit taskussa",
+    "linkUrl": "https://github.com/Kaitsuus/Tile-helper-app"
   }
 ]
