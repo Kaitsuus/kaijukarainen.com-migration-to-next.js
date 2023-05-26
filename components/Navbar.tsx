@@ -43,9 +43,9 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
       {/* logo */}
       <div>
         <Image
-          src="/assets/KJL.png"
-          width={80}
-          height={80}
+          src="/assets/LU.png"
+          width={40}
+          height={40}
           alt="kaijukarainenLogo"
         />
       </div>
