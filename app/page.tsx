@@ -29,8 +29,8 @@ export default function page() {
         <I18nextProvider i18n={i18n}>
           <NavBar navItems={navItems} />
           <Home />
-          <div style={bgStyle}>
           <Info2 />
+          <div style={bgStyle}>
           <Info3 />
           <PriceModel />
           <Booking />
