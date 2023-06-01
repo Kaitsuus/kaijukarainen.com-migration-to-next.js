@@ -37,7 +37,7 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
   };
   return (
     <div
-      className="fixed w-full h-[80px] flex justify-between items-center px-4 z-50 text-[#e8e7e7] bg-transparent"
+      className="fixed w-full h-[60px] flex justify-between items-center px-4 z-50 text-[#e8e7e7] bg-[#191a1e]"
       data-testid="navbar"
     >
       {/* logo */}
@@ -73,7 +73,7 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
           <a href="/">{t('navHome')}</a>
         </li>
         <li className="hover:text-[#3CD6EB] hover:scale-110 duration-500 hover:cursor-pointer">
-          <a href="wordpress">{t('wpHeader')}</a>
+          <a href="dev">Dev</a>
         </li>
         {/*Link menu*/}
         {navItems.map((item) => (
@@ -115,8 +115,8 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
           </a>
         </li>
         <li className="py-6 text-4xl">
-          <a onClick={handleClick} href="wordpress">
-            WordPress
+          <a onClick={handleClick} href="dev">
+            Dev
           </a>
         </li>
         {navItems.map((item) => (

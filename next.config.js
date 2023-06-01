@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 require('dotenv').config();
-const nextConfig = {};
+const nextConfig = {
+    /* config options here */
+};
 
 module.exports = nextConfig;
