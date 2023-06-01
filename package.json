@@ -13,6 +13,7 @@
     "test:ci": "jest --ci"
   },
   "dependencies": {
+    "@fontsource/inter": "^5.0.2",
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
@@ -23,6 +24,7 @@
     "eslint-config-next": "13.4.1",
     "jquery": "^3.7.0",
     "next": "13.4.1",
+    "next-seo": "^6.0.0",
     "react": "18.2.0",
     "react-cookie": "^4.1.1",
     "react-cookie-consent": "^8.0.1",

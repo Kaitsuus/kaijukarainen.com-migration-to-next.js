@@ -6,6 +6,7 @@ import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Privacy from '@/components/Privacy';
 import CookieConsent from '@/utils/Cookies';
+import CustomHead from '@/components/CustomHead';
 
 const navItems = [{ to: 'footer', label: 'Contact' }];
 
@@ -14,6 +15,7 @@ export default function page() {
     <CookiesProvider>
       <CookieConsent />
       <I18nextProvider i18n={i18n}>
+        <CustomHead slug="privacy" />
         <NavBar navItems={navItems} />
         <Privacy />
         <Footer linkDestination="privacy" />

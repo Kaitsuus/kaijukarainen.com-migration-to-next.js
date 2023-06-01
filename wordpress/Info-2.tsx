@@ -5,9 +5,6 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import 'tailwindcss/tailwind.css';
 
-
-
-
 const Info2: React.FC = () => {
   const { t } = useTranslation();
   const bgStyle: React.CSSProperties = {
@@ -43,18 +40,17 @@ const Info2: React.FC = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div></div>
+        </div>
+        <Link to="info3" smooth={true} duration={500}>
+          <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-40 ">
+            {t('pricingHeader')}
+            <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight className="ml-3" />
+            </span>
+          </button>
+        </Link>
       </div>
-        </div>
-          <Link to="info3" smooth={true} duration={500}>
-            <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-40 ">
-              {t('pricingHeader')}
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3" />
-              </span>
-            </button>
-          </Link>
-        </div>
 
       <div className="md:hidden w-full pb-5 bg-[#191a1e] p-4 flex mx-auto flex-col justify-center">
         <div className="flex flex-row mt-5">
@@ -77,20 +73,18 @@ const Info2: React.FC = () => {
               </p>
             </div>
           </div>
-          <div>
+          <div></div>
+        </div>
+        <Link to="info3" smooth={true} duration={500}>
+          <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500">
+            {t('pricingHeader')}
+            <span className="group-hover:rotate-90 duration-300">
+              <HiArrowNarrowRight className="ml-3" />
+            </span>
+          </button>
+        </Link>
       </div>
-        </div>
-          <Link to="info3" smooth={true} duration={500}>
-            <button className="font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500">
-              {t('pricingHeader')}
-              <span className="group-hover:rotate-90 duration-300">
-                <HiArrowNarrowRight className="ml-3" />
-              </span>
-            </button>
-          </Link>
-        </div>
     </div>
-    
   );
 };
 

@@ -12,6 +12,7 @@ import NavBar from '@/components/Navbar';
 import CookieConsent from '@/utils/Cookies';
 import backgroundImage from '../public/assets/kjBg.png';
 import Booking from '@/wordpress/Booking';
+import CustomHead from '@/components/CustomHead';
 
 const navItems = [{ to: 'footer', label: 'Contact' }];
 const bgStyle: React.CSSProperties = {
@@ -20,10 +21,10 @@ const bgStyle: React.CSSProperties = {
   backgroundPosition: 'center',
 };
 
-
 export default function page() {
   return (
     <div>
+      <CustomHead slug="" />
       <CookiesProvider>
         <CookieConsent />
         <I18nextProvider i18n={i18n}>
@@ -31,9 +32,9 @@ export default function page() {
           <Home />
           <Info2 />
           <div style={bgStyle}>
-          <Info3 />
-          <PriceModel />
-          <Booking />
+            <Info3 />
+            <PriceModel />
+            <Booking />
           </div>
           <FAQModel />
           <Footer linkDestination="wordpress" />

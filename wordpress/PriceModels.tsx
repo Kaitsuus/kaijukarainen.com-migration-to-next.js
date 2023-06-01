@@ -9,16 +9,11 @@ const PriceModels: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div
-      id="priceModels"
-      className="w-full h-full text-[#e8e7e7] z-10"
-    >
+    <div id="priceModels" className="w-full h-full text-[#e8e7e7] z-10">
       {/* container */}
       <div className=" bg-[#191a1e] mx-auto p-4 pt-10 flex flex-col justify-center w-full">
         <div className="max-w-[1000px] flex flex-col align-middle mx-auto">
-          <p className="text-4xl font-bold">
-            {t('pricingHeader')}
-          </p>
+          <p className="text-4xl font-bold">{t('pricingHeader')}</p>
           <div className="w-full grid grid-cols-1 sm:grid-cols-4 gap-4 text-center py-8">
             {/* Info-container */}
             <div

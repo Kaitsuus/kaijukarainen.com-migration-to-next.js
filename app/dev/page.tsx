@@ -9,6 +9,7 @@ import DevWork from '@/dev/Work';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import CookieConsent from '@/utils/Cookies';
+import CustomHead from '@/components/CustomHead';
 
 const navItems = [
   { to: 'about', label: 'About' },
@@ -21,6 +22,7 @@ export default function Home() {
   return (
     <div>
       <CookiesProvider>
+        <CustomHead slug="dev" />
         <CookieConsent />
         <I18nextProvider i18n={i18n}>
           <Navbar navItems={navItems} />
