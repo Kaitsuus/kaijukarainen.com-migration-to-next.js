@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import Head from 'next/head';
 import './globals.css';
 
+
 interface RootLayoutProps {
   children: React.ReactNode;
 }
@@ -11,8 +12,7 @@ interface RootLayoutProps {
 export const metadata = {
   openGraph: {
     title: 'WordPress verkkosivut yrityksille.',
-    description:
-      'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
+    description: 'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
     url: 'https://kaijukarainen.com',
     siteName: 'Kaijukarainen.com',
     images: [
@@ -20,11 +20,11 @@ export const metadata = {
         url: 'https://kaijukarainen.com/wordpressverkkosivut.png',
         width: 1640,
         height: 924,
-        alt: 'WordPress verkkosivut',
-      },
+        alt: 'WordPress verkkosivut'
+      }
     ],
     locale: 'fi_FI',
-    type: 'website',
+    type: 'website'
   },
   title: 'WordPress verkkosivut yrityksille.',
   description:
@@ -52,19 +52,18 @@ export default function RootLayout({ children }: RootLayoutProps) {
           openGraph={{
             url: 'https://kaijukarainen.com',
             title: 'WordPress verkkosivut yrityksille.',
-            description:
-              'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
+            description: 'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
             images: [
               {
                 url: 'https://kaijukarainen.com/wordpressverkkosivut.png',
                 width: 1640,
                 height: 924,
-                alt: 'WordPress verkkosivut',
-              },
+                alt: 'WordPress verkkosivut'
+              }
             ],
             site_name: 'Kaijukarainen.com',
             locale: 'fi_FI',
-            type: 'website',
+            type: 'website'
           }}
         />
       </Head>
