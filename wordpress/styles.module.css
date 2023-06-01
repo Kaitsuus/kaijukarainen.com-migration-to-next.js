@@ -22,10 +22,10 @@
   .hover-effect:hover {
     transform: scale(1.1);
   }
-}
 
-@media (max-width: 640px) {
-  .container-div {
-    height: 100%;
+  @media (max-width: 640px) {
+    .container-div {
+      height: 100%;
+    }
   }
 }

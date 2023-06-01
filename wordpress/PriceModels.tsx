@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Modal from '../components/ContactModal';
+import styles from '../components/styles.module.css';
 const url = process.env.BOOKINGS_URL;
 
 const PriceModels: React.FC = () => {
@@ -10,18 +11,18 @@ const PriceModels: React.FC = () => {
   return (
     <div
       id="priceModels"
-      className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10"
+      className="w-full h-full text-[#e8e7e7] z-10"
     >
       {/* container */}
-      <div className="max-w-[1000px] mx-auto px-4 pt-5 flex flex-col justify-start w-full">
-        <div>
-          <p className="text-4xl font-bold inline border-b-4 border-[#3CD6EB]">
+      <div className=" bg-[#191a1e] mx-auto p-4 pt-10 flex flex-col justify-center w-full">
+        <div className="max-w-[1000px] flex flex-col align-middle mx-auto">
+          <p className="text-4xl font-bold">
             {t('pricingHeader')}
           </p>
           <div className="w-full grid grid-cols-1 sm:grid-cols-4 gap-4 text-center py-8">
             {/* Info-container */}
             <div
-              className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] hover:scale-110 duration-500 z-10 hover:cursor-pointer"
+              className={`bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10 hover:cursor-pointer ${styles['hover-effect']}`}
               onClick={() => setShowModal(true)}
             >
               <h2 className="text-4xl font-extrabold text-[#fafafa] mt-5 ">
@@ -49,7 +50,7 @@ const PriceModels: React.FC = () => {
             </div>
             {/* Kattava-container */}
             <div
-              className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] hover:scale-110 duration-500 z-10 hover:cursor-pointer"
+              className={`bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10 hover:cursor-pointer ${styles['hover-effect']}`}
               onClick={() => setShowModal(true)}
             >
               <h2 className="text-4xl font-extrabold text-[#fafafa] mt-5 ">
@@ -77,7 +78,7 @@ const PriceModels: React.FC = () => {
             </div>
             {/* Kauppa-container */}
             <div
-              className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] hover:scale-110 duration-500 z-10 hover:cursor-pointer"
+              className={`bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10 hover:cursor-pointer ${styles['hover-effect']}`}
               onClick={() => setShowModal(true)}
             >
               <h2 className="text-4xl font-extrabold text-[#fafafa] mt-5 ">
@@ -103,7 +104,7 @@ const PriceModels: React.FC = () => {
             </div>
             {/* Custom-container */}
             <div
-              className="bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] hover:scale-110 duration-500 z-10 hover:cursor-pointer"
+              className={`bg-[#292f37] rounded-md shadow-md shadow-[#5ddbe2] z-10 hover:cursor-pointer ${styles['hover-effect']}`}
               onClick={() => setShowModal(true)}
             >
               <h2 className="text-4xl font-extrabold text-[#fafafa] mt-5 ">
@@ -126,15 +127,6 @@ const PriceModels: React.FC = () => {
               <div className="pt-5"></div>
             </div>
           </div>
-        </div>
-        <div className="text-lg">
-          <h1>{t('pricingText')}</h1>
-          <iframe
-            src={url}
-            width="100%"
-            height="800"
-            style={{ border: 'none', overflow: 'hidden' }}
-          ></iframe>
         </div>
       </div>
       {showModal ? (

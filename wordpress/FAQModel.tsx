@@ -35,7 +35,7 @@ const FAQModel: React.FC = () => {
           <thead>
             <tr>
               <th colSpan={numCols}>
-                <p className="text-4xl font-bold inline border-b-4 text-[#fafafa] border-[#3CD6EB]">
+                <p className="text-4xl font-bold text-[#fafafa]">
                   {t('TableHead')}
                 </p>
               </th>
