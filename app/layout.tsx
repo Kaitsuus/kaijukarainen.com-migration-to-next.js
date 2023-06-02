@@ -45,7 +45,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content="Kai Jukarainen" />
-        <link rel="canonical" href="https://kaijukarainen.com" />
+        <link rel="google-site-verification" href="/google960e0ffaae4fc22c.html" />
 
         <NextSeo
           title={metadata.title}
