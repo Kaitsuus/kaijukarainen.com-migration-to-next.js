@@ -30,7 +30,7 @@ export const metadata = {
   description:
     'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
   keywords:
-    'WordPress, Woocommerce, verkkosivut, SEO, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset',
+    'WordPress, Woocommerce, verkkosivut, SEO, verkkosivut yrityksille, WordPress-verkkosivut, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset,',
   favicon: '/favicon.ico',
 };
 
