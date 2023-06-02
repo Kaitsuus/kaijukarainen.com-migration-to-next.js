@@ -31,6 +31,7 @@ export const metadata = {
     'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
   keywords:
     'WordPress, Woocommerce, verkkosivut, SEO, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset',
+  favicon: '/favicon.ico',
 };
 
 const inter = Inter({ subsets: ['latin'] });
@@ -63,7 +64,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             ],
             site_name: 'Kaijukarainen.com',
             locale: 'fi_FI',
-            type: 'website'
+            type: 'website',
           }}
         />
       </Head>
