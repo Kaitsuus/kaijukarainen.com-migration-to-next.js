@@ -27,9 +27,9 @@ const WpVideo: React.FC<WpVideoProps> = ({
     <div id="Info" className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-start w-full h-ful">
         <div className="pt-20">
-          <h1 className="text-4xl sm:text-4xl font-bold text-[#fafafa]">
+          <h2 className="text-4xl sm:text-4xl font-bold text-[#fafafa]">
             {t('videoHeader')}
-          </h1>
+          </h2>
           <div className="text-xl py-4">
             <p>{t('videoText')}</p>
           </div>

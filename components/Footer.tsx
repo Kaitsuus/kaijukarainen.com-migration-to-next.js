@@ -90,7 +90,7 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
               target="_blank"
               rel="noreferrer"
             >
-              <FaYoutube size={30} />
+              <FaYoutube size={30}/>
             </a>
           </li>
           <li className="w-[60px] h-[60px] flex  justify-between items-center z-10 hover:scale-150 duration-500">

@@ -60,7 +60,7 @@ const DevHome: React.FC = () => {
         <p className="text-[#e8e7e7] font-bold pl-1">
           OODI <span className="text-[#3CD6EB]">Koodille</span>
         </p>
-        <h1 className="text-7xl font-bold text-[#e8e7e7]">Kai Jukarainen</h1>
+        <h2 className="text-7xl font-bold text-[#e8e7e7]">Kai Jukarainen</h2>
         <h2 className="text-7xl font-bold text-[#e8e7e7]">
           {text}
           <span className="opacity-0 animate-pulse">_</span>
@@ -82,7 +82,7 @@ const DevHome: React.FC = () => {
         <p className="text-[#e8e7e7] font-bold pl-1">
           OODI <span className="text-[#3CD6EB]">Koodille</span>
         </p>
-        <h1 className="text-4xl font-bold text-[#e8e7e7]">Kai Jukarainen</h1>
+        <h2 className="text-4xl font-bold text-[#e8e7e7]">Kai Jukarainen</h2>
         <h2 className="text-2xl font-bold text-[#e8e7e7]">
           {text}
           <span className="opacity-0 animate-pulse">_</span>

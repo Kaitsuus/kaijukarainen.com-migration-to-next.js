@@ -17,7 +17,7 @@ export const metadata = {
     siteName: 'Kaijukarainen.com',
     images: [
       {
-        url: 'https://kaijukarainen.com/wordpressverkkosivut.png',
+        url: 'https://kaijukarainen.com/wordpressverkkosivut',
         width: 1640,
         height: 924,
         alt: 'WordPress verkkosivut'
@@ -55,7 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             description: 'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
             images: [
               {
-                url: 'https://kaijukarainen.com/wordpressverkkosivut.png',
+                url: 'https://kaijukarainen.com/wordpressverkkosivut',
                 width: 1640,
                 height: 924,
                 alt: 'WordPress verkkosivut'

@@ -24,7 +24,7 @@ const bgStyle: React.CSSProperties = {
 export default function page() {
   return (
     <div>
-      <CustomHead slug="" />
+      <CustomHead slug="wordpress" />
       <CookiesProvider>
         <CookieConsent />
         <I18nextProvider i18n={i18n}>

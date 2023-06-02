@@ -22,9 +22,9 @@ const Info2: React.FC = () => {
       <div className="hidden w-full bg-[#191a1e] p-4 md:flex mx-auto flex-col justify-center">
         <div className="flex flex-row mt-5 ml-40">
           <div className="pl-20 pr-5 flex flex-col">
-            <h1 className="text-4xl sm:text-4xl font-bold text-[#fafafa]">
+            <h2 className="text-4xl sm:text-4xl font-bold text-[#fafafa]">
               {t('wpMainTextHeader')}
-            </h1>
+            </h2>
             <div className="text-xl py-4">
               <p className="text-xl text-[#fafafa] truncate whitespace-pre-wrap max-w-[1000px]">
                 {t('wpMainText')}
@@ -55,9 +55,9 @@ const Info2: React.FC = () => {
       <div className="md:hidden w-full pb-5 bg-[#191a1e] p-4 flex mx-auto flex-col justify-center">
         <div className="flex flex-row mt-5">
           <div className=" flex flex-col">
-            <h1 className="text-2xl font-bold text-[#fafafa]">
+            <h2 className="text-2xl font-bold text-[#fafafa]">
               {t('wpMainTextHeader')}
-            </h1>
+            </h2>
             <div className="text-sm py-4">
               <p className="text-sm text-[#fafafa] truncate whitespace-pre-wrap max-w-[1000px]">
                 {t('wpMainText')}
