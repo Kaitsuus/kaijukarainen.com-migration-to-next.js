@@ -15,7 +15,7 @@ const Home: React.FC = () => {
 
   return (
     <div
-      id="wordpress"
+      id="home"
       style={bgStyle}
       className="w-full h-screen bg-[#191a1e] text-[#e8e7e7] z-10"
     >
