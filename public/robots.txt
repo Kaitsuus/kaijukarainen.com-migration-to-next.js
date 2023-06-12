@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Disallow: /404
+
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kaijukarainen.com
+
+# Sitemaps
+Sitemap: https://kaijukarainen.com/sitemap.xml
+Sitemap: https://kaijukarainen.com/server-sitemap.xml
