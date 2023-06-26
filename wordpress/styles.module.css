@@ -29,3 +29,24 @@
     }
   }
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fade-in 1.1s ease-in-out forwards;
+}
+.fade-in2 {
+  animation: fade-in 1.3s ease-in-out forwards;
+}
+.fade-in3 {
+  animation: fade-in 1.5s ease-in-out forwards;
+}

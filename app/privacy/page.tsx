@@ -7,7 +7,6 @@ import Footer from '@/components/Footer';
 import Privacy from '@/components/Privacy';
 import CookieConsent from '@/utils/Cookies';
 import CustomHead from '@/components/CustomHead';
-import { NextSeo } from 'next-seo';
 
 const navItems = [{ to: 'footer', label: 'Contact' }];
 
@@ -36,22 +35,6 @@ export default function page() {
       <meta
         property="og:image"
         content="https://kaijukarainen.com/wordpressverkkosivut"
-      />
-      <NextSeo
-        title="Privacy page"
-        description="Rekisteri- ja tietosuojaseloste."
-        openGraph={{
-          title: 'Privacy page',
-          description: 'Rekisteri- ja tietosuojaseloste.',
-          images: [
-            {
-              url: 'https://kaijukarainen.com/wordpressverkkosivut',
-              width: 1640,
-              height: 924,
-              alt: 'WordPress verkkosivut',
-            },
-          ],
-        }}
       />
       <CookiesProvider>
         <CookieConsent />

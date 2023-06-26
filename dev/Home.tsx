@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-import backgroundImage from '../public/assets/background.png';
+import backgroundImage from '../public/assets/devBackground.png';
 import { useTranslation } from 'react-i18next';
 
 const DevHome: React.FC = () => {
@@ -58,9 +58,10 @@ const DevHome: React.FC = () => {
       {/* container */}
       <div className="hidden md:flex max-w-[1000px] ml-40 flex-col justify-center h-full">
         <p className="text-[#e8e7e7] font-bold pl-1">
-          OODI <span className="text-[#3CD6EB]">Koodille</span>
+          {t('oodi')}
+          <span className="text-[#3CD6EB]"> {t('koodi')}</span>
         </p>
-        <h2 className="text-7xl font-bold text-[#e8e7e7]">Kai Jukarainen</h2>
+        <h2 className="text-7xl font-bold text-[#e8e7e7]">{t('kj')}</h2>
         <h2 className="text-7xl font-bold text-[#e8e7e7]">
           {text}
           <span className="opacity-0 animate-pulse">_</span>

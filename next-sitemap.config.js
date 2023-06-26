@@ -1,6 +1,11 @@
 // next-sitemap.config.js
-const siteUrl = process.env.SITE_URL || 'https://kaijukarainen.com'
-const dynamicRoutes = process.env.dynamicRoutes || [{"page":"/","query":{}},{"page":"/dev","query":{}},{"page":"/privacy","query":{}},{"page":"/wordpressverkkosivut","query":{}}];
+const siteUrl = process.env.SITE_URL || 'https://kaijukarainen.com';
+const dynamicRoutes = process.env.dynamicRoutes || [
+  { page: '/', query: {} },
+  { page: '/dev', query: {} },
+  { page: '/privacy', query: {} },
+  { page: '/wordpressverkkosivut', query: {} },
+];
 
 const config = {
   siteUrl,

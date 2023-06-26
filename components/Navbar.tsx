@@ -26,28 +26,31 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
       document.getElementById('switch-btnEn');
     if (buttonEn) {
       buttonEn.style.color =
-        lang === 'en' ? '#3CD6EB' : 'rgb(209 213 219 / var(--tw-text-opacity))';
+        lang === 'en' ? '#ffa726' : 'rgb(209 213 219 / var(--tw-text-opacity))';
     }
     const buttonFi: HTMLElement | null =
       document.getElementById('switch-btnFi');
     if (buttonFi) {
       buttonFi.style.color =
-        lang === 'fi' ? '#3CD6EB' : 'rgb(209 213 219 / var(--tw-text-opacity))';
+        lang === 'fi' ? '#ffa726' : 'rgb(209 213 219 / var(--tw-text-opacity))';
     }
+    setNav(false);
   };
   return (
     <div
-      className="fixed w-full h-[60px] flex justify-between items-center px-4 z-50 text-[#e8e7e7] bg-[#191a1e]"
+      className="fixed w-full h-[60px] flex justify-between items-center px-4 z-50 text-slate-100 bg-slate-800"
       data-testid="navbar"
     >
       {/* logo */}
       <div>
-        <Image
-          src="/assets/LU.png"
-          width={40}
-          height={40}
-          alt="kaijukarainenLogo"
-        />
+        <a href="/">
+          <Image
+            src="/assets/LU.png"
+            width={40}
+            height={40}
+            alt="kaijukarainenLogo"
+          />
+        </a>
       </div>
       {/* menu */}
       <ul className="hidden md:flex gap-3 font-semibold">
@@ -55,31 +58,31 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
         <div className="flex">
           <button
             id="switch-btnEn"
-            className="flex justify-between px-2 hover:text-[#3CD6EB] hover:scale-110 duration-500"
+            className="flex justify-between px-2 hover:text-orange-400 hover:scale-110 duration-500"
             onClick={() => handleLanguageChange('en')}
           >
             {t('EN')}
           </button>
           <button
             id="switch-btnFi"
-            className="hover:text-[#3CD6EB] hover:scale-110 duration-500 "
+            className="hover:text-orange-400 hover:scale-110 duration-500 "
             onClick={() => handleLanguageChange('fi')}
           >
             {t('FI')}
           </button>
         </div>
         {/*pages menu*/}
-        <li className="hover:text-[#3CD6EB] hover:scale-110 duration-500 hover:cursor-pointer">
+        <li className="hover:text-orange-400 hover:scale-110 duration-500 hover:cursor-pointer">
           <a href="/">{t('navHome')}</a>
         </li>
-        <li className="hover:text-[#3CD6EB] hover:scale-110 duration-500 hover:cursor-pointer">
+        <li className="hover:text-orange-400 hover:scale-110 duration-500 hover:cursor-pointer">
           <a href="dev">Dev</a>
         </li>
         {/*Link menu*/}
         {navItems.map((item) => (
           <li
             key={item.to}
-            className="hover:text-[#3CD6EB] hover:scale-110 duration-500 hover:cursor-pointer"
+            className="hover:text-orange-400 hover:scale-110 duration-500 hover:cursor-pointer"
           >
             <Link to={item.to} smooth={true} duration={500}>
               {item.label}
@@ -88,7 +91,7 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
         ))}
       </ul>
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-40 text-[#fafafa]">
+      <div onClick={handleClick} className="md:hidden z-40 text-slate-100">
         {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
       </div>
       {/* mobile menu */}
@@ -96,7 +99,7 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-gradient-to-r bg-[#191a1e] text-[#e8e7e7] flex flex-col justify-center items-center z-20'
+            : 'absolute top-0 left-0 w-full h-screen bg-gradient-to-r bg-slate-800 text-slate-100 flex flex-col justify-center items-center z-20'
         }
       >
         {/*language handler*/}
@@ -131,7 +134,6 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
       <SocialIcons
         linkedin="https://www.linkedin.com/in/kai-jukarainen-b6b1a9257/"
         github="https://github.com/Kaitsuus"
-        youtube="https://www.youtube.com/@devkj"
         facebook="https://www.facebook.com/people/kaijukarainencom/100092388553380/"
         instagram="https://www.instagram.com/kaijukarainen/"
       />

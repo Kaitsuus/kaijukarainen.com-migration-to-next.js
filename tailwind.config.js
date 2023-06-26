@@ -5,7 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './dev/**/*.{js,ts,jsx,tsx,mdx}',
-    '/wordpress/**/*.{js,ts,jsx,tsx,mdx}',
+    './wordpress/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
@@ -13,6 +13,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
+      exl: '1536px',
     },
     extend: {
       backgroundImage: {

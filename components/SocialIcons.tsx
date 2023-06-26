@@ -3,7 +3,6 @@ import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 interface SocialIconsProps {
   linkedin: string;
   github: string;
-  youtube: string;
   facebook: string;
   instagram: string;
 }

@@ -3,15 +3,17 @@ import { useTranslation } from 'react-i18next';
 import backgroundImage from '../public/assets/kjBg.png';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
-const url = process.env.BOOKINGS_URL;
 
 const Booking: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <div id="booking" className="w-full h-full text-[#e8e7e7] z-10 ">
+    <div
+      id="booking"
+      className="w-full h-full text-slate-800 z-10 bg-slate-100"
+    >
       {/* container */}
-      <div className=" bg-[#191a1e] mx-auto p-4 pt-10 flex flex-col justify-center w-full">
+      <div className=" bg-slate-100 mx-auto p-4 pt-10 flex flex-col justify-center w-full">
         <div className="max-w-[1000px] flex flex-col align-middle mx-auto">
           <h2>{t('pricingText')}</h2>
         </div>

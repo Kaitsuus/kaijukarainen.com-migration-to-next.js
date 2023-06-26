@@ -1,12 +1,14 @@
 import React from 'react';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import NavBar from '@/components/Navbar';
 
 interface RootLayoutProps {
   children: React.ReactNode;
 }
 
 const inter = Inter({ subsets: ['latin'] });
+const navItems = [{ to: 'footer', label: 'Contact' }];
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (

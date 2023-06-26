@@ -28,14 +28,14 @@ const FAQModel: React.FC = () => {
   return (
     <div
       id="FAQ"
-      className="w-full h-full bg-[#191a1e] text-[#e8e7e7] z-10 pb-20 pt-20"
+      className="w-full h-full bg-slate-100 text-slate-800 z-10 pb-20 pt-20"
     >
       <div className="max-w-[1000px] p-4 flex mx-auto flex-col justify-center h-full">
         <table>
           <thead>
             <tr>
               <th colSpan={numCols}>
-                <p className="text-4xl font-bold text-[#fafafa]">
+                <p className="text-4xl font-bold text-slate-800">
                   {t('TableHead')}
                 </p>
               </th>
@@ -44,7 +44,7 @@ const FAQModel: React.FC = () => {
           <tbody>
             {data().map((row) => (
               <React.Fragment key={row.id}>
-                <tr className="border-b-4 text-2xl text-[#fafafa] font-bold border-[#3CD6EB]">
+                <tr className="border-b-4 text-2xl text-slate-800 font-bold border-orange-400">
                   <td
                     className="px-4 py-2 hover:cursor-pointer"
                     onClick={() => handleRowClick(row.id)}
@@ -65,7 +65,7 @@ const FAQModel: React.FC = () => {
                         onClick={() => handleRowClick(row.id)}
                       >
                         <ul>
-                          <li className="text-[#fafafa] text-2xl">
+                          <li className="text-slate-800 text-2xl">
                             {row.text}
                           </li>
                         </ul>

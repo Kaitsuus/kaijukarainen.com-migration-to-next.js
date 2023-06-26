@@ -22,12 +22,12 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
   return (
     <footer
       id="footer"
-      className="text-center bg-[#191a1e] text-[#e8e7e7] pt-20"
+      className="text-center bg-slate-800 text-slate-100 pt-20"
     >
       {/* container */}
       <div className="md:flex flex-row justify-center gap-5">
         <div className="pb-8 pt-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#3CD6EB]">
+          <p className="text-4xl font-bold inline border-b-4 border-orange-400">
             {t('contact-me')}
           </p>
           <ul className="py-4 font-semibold">
@@ -49,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
           </ul>
         </div>
         <div className="pb-8 pt-8">
-          <p className="text-4xl font-bold inline border-b-4 border-[#3CD6EB] ">
+          <p className="text-4xl font-bold inline border-b-4 border-orange-400 ">
             {t('contactHeader')}
           </p>
           <button
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
         <ul className="inline-flex">
           <li className="w-[60px] h-[60px] flex justify-between items-center z-10 hover:scale-150 duration-500">
             <a
-              className="flex  justify-between w-full text-gray-300"
+              className="flex  justify-between w-full text-slate-100"
               href="https://www.linkedin.com/in/kai-jukarainen-b6b1a9257/"
               target="_blank"
               rel="noreferrer"
@@ -75,7 +75,7 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
           </li>
           <li className="w-[60px] h-[60px] flex  justify-between items-center z-10 hover:scale-150 duration-500">
             <a
-              className="flex justify-between w-full text-gray-300"
+              className="flex justify-between w-full text-slate-100"
               href="https://github.com/Kaitsuus"
               target="_blank"
               rel="noreferrer"
@@ -117,15 +117,15 @@ const Footer: React.FC<FooterProps> = ({ linkDestination }) => {
       </div>
       <div className="flex flex-row justify-center items-center">
         <a href="/privacy">
-          <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-[#3CD6EB] z-10">
+          <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-orange-400 z-10">
             privacy
           </p>
         </a>
         <p>Copyright © 2023 Kai Jukarainen</p>
         <Link to={linkDestination} smooth={true} duration={500}>
-          <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-[#3CD6EB] z-10">
+          <p className=" text-white group px-6 py-3 my-2 flex items-center hover:cursor-pointer hover:text-orange-400 z-10">
             Up
-            <span className="group-hover:rotate-[-90deg] duration-300 group-hover:cursor-pointer hover:text-[#3CD6EB] z-10">
+            <span className="group-hover:rotate-[-90deg] duration-300 group-hover:cursor-pointer hover:text-orange-400 z-10">
               <HiArrowNarrowRight className="ml-3 z-10" />
             </span>
           </p>

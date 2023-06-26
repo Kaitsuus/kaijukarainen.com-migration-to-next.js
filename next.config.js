@@ -12,7 +12,7 @@ const config = {
       '/wordpressverkkosivut': { page: '/wordpressverkkosivut' },
     };
 
-    dynamicRoutes.forEach(route => {
+    dynamicRoutes.forEach((route) => {
       paths[route.page] = {
         page: route.page,
         query: route.query,
