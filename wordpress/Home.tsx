@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       className="w-full h-screen text-slate-800 bg-slate-100"
     >
       {/* container */}
-      <div className={`hidden md:flex max-w-[1000px] ml-40 flex-col justify-center h-full pt-60 ${fadeIn ? 'fade-in' : ''}`}>
+      <div className={`hidden md:flex max-w-[1000px] xl:ml-40 mx-5 flex-col justify-center h-full pt-60 ${fadeIn ? 'fade-in' : ''}`}>
         <p className="font-bold pl-1" >
           Kai Jukarainen
         </p>

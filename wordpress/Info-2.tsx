@@ -14,9 +14,9 @@ const Info2: React.FC = () => {
       className="h-full bg-slate-100 sm:h-full w-full text-slate-800 z-10 flex flex-col justify-center"
     >
       {/* container */}
-      <div className="hidden md:flex ml-40 flex-col justify-center pt-16 pb-16 exl:pt-40">
+      <div className="hidden md:flex xl:ml-40 mx-5 flex-col justify-center pt-10 pb-16 exl:pt-40">
         <div className="flex flex-row">
-          <div className="flex flex-col max-w-[800px]">
+          <div className="flex flex-col max-w-[800px] pt-16">
             <h2 className="text-4xl sm:text-4xl font-bold">
               {t('wpMainTextHeader')}
             </h2>
@@ -45,13 +45,13 @@ const Info2: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div className="ml-10 exl:mt-[-40px] exl:ml-12">
+          <div className="hidden xl:flex ml-10 ">
             <Image
               src={moks}
               width={800}
               height={800}
               alt="moks"
-              className="mx-auto my-auto"
+              className='mx-auto my-auto'
             />
           </div>
         </div>
@@ -87,8 +87,8 @@ const Info2: React.FC = () => {
         </div>
         <div className="flex flex-row mt-5">
           <div className=" flex flex-col">
-            <div className="text-sm pt-4">
-              <p className="text-sm truncate whitespace-pre-wrap max-w-[1000px]">
+            <div className="text-md pt-4">
+              <p className="truncate whitespace-pre-wrap max-w-[1000px]">
                 {t('wpMainText')}
                 <br />
                 <br />
