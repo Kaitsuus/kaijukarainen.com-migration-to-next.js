@@ -1,12 +1,15 @@
 'use client';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import 'tailwindcss/tailwind.css';
 import moks from '../public/assets/moks.png';
+import Modal from '../components/GetBookModal';
 
 const Info2: React.FC = () => {
+  const [showBookModal, setShowBookModal] = useState(false);
   const { t } = useTranslation();
   return (
     <div
@@ -33,6 +36,11 @@ const Info2: React.FC = () => {
                 <br />
                 {t('wpMainTextp4')}
               </p>
+            </div>
+            <div>
+            <h2>playbook</h2>
+            <p>get playbook</p>
+            <button onClick={() => setShowBookModal(true)}>get book</button>
             </div>
             <div>
               <Link to="priceModels" smooth={true} duration={500}>
@@ -114,6 +122,9 @@ const Info2: React.FC = () => {
           </div>
         </div>
       </div>
+      {showBookModal ? (
+        <Modal showBookModal={showBookModal} setShowBookModal={setShowBookModal} />
+      ) : null}
     </div>
   );
 };
