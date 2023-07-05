@@ -6,10 +6,13 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import { Link } from 'react-scroll';
 import 'tailwindcss/tailwind.css';
 import moks from '../public/assets/moks.png';
+import tablet from '../public/assets/tablet.png';
 import Modal from '../components/GetBookModal';
+import ContactModal from '../components/ContactModal';
 
 const Info2: React.FC = () => {
   const [showBookModal, setShowBookModal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const { t } = useTranslation();
   return (
     <div
@@ -36,21 +39,14 @@ const Info2: React.FC = () => {
                 <br />
                 {t('wpMainTextp4')}
               </p>
-            </div>
-            <div>
-            <h2>playbook</h2>
-            <p>get playbook</p>
-            <button onClick={() => setShowBookModal(true)}>get book</button>
-            </div>
-            <div>
-              <Link to="priceModels" smooth={true} duration={500}>
-                <button className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
-                  {t('pricingHeader')}
-                  <span className="group-hover:rotate-90 duration-300">
+              <button 
+                onClick={() => setShowModal(true)}
+                className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
+                  {t('contactME')}
+                  <span>
                     <HiArrowNarrowRight className="ml-3" />
                   </span>
                 </button>
-              </Link>
             </div>
           </div>
           <div className="hidden xl:flex ml-10 ">
@@ -61,6 +57,41 @@ const Info2: React.FC = () => {
               alt="moks"
               className="mx-auto my-auto"
             />
+          </div>
+        </div>
+      </div>
+      {/* container */}
+      <div className="hidden md:flex  mx-5 flex-col justify-center pt-10 pb-16 exl:pt-40">
+        <div className="flex flex-row">
+        <div className="hidden xl:flex pr-10 ml-20">
+            <Image
+              src={tablet}
+              width={400}
+              height={400}
+              alt="tablet"
+              className="mx-auto my-auto"
+            />
+          </div>
+          <div className="flex flex-col max-w-[800px] pt-16">
+            <h2 className="text-4xl sm:text-4xl font-bold">
+              WordPress & Woocommerce <br/>
+              {t('playBookHead')}
+            </h2>
+            <div className="text-xl py-4">
+              <p className="text-xl truncate whitespace-pre-wrap max-w-[900px]">
+              {t('playBookText')}
+              </p>
+            </div>
+            <div>
+                <button 
+                onClick={() => setShowBookModal(true)}
+                className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
+                  Tilaa
+                  <span>
+                    <HiArrowNarrowRight className="ml-3" />
+                  </span>
+                </button>
+            </div>
           </div>
         </div>
       </div>
@@ -108,22 +139,42 @@ const Info2: React.FC = () => {
                 <br />
                 {t('wpMainTextp4')}
               </p>
-            </div>
-            <Link
-              to="priceModels"
-              smooth={true}
-              duration={500}
-              className="pt-5"
-            >
-              <button className="font-semibold text-slate-100 bg-orange-400 group px-6 py-3 my-2 flex items-center hover:scale-110 duration-500">
-                {t('pricingHeader')}
+              <button 
+              onClick={() => setShowModal(true)}
+              className="font-semibold text-slate-100 bg-orange-400 group px-6 py-3 my-2 flex items-center hover:scale-110 duration-500">
+              {t('contactME')}
               </button>
-            </Link>
+            </div>
+
+          </div>
+        </div>
+        <div className="flex flex-row mt-5">
+          <div className=" flex flex-col">
+            <div className="text-md pt-4">
+              <h2 className="truncate font-bold whitespace-pre-wrap max-w-[1000px]">
+              WordPress & Woocommerce <br/>
+              {t('playBookHead')}
+              </h2>
+              <p>
+              {t('playBookText')}
+              </p>
+            <button 
+                onClick={() => setShowBookModal(true)}
+                className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
+                  Tilaa
+                  <span>
+                    <HiArrowNarrowRight className="ml-3" />
+                  </span>
+                </button>
+            </div>
           </div>
         </div>
       </div>
       {showBookModal ? (
         <Modal showBookModal={showBookModal} setShowBookModal={setShowBookModal} />
+      ) : null}
+      {showModal ? (
+        <ContactModal showModal={showModal} setShowModal={setShowModal} />
       ) : null}
     </div>
   );
