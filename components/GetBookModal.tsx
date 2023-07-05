@@ -83,7 +83,7 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
                 {t('headerBookModal')} 
                 </p>
                 <p className="text-slate-100 font-semibold py-4">
-                {t('headerBookModal')}
+                {t('bodyBookModal')}
                 </p>
               </div>
             )}
