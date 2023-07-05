@@ -17,11 +17,8 @@ const navItems = [{ to: 'footer', label: 'Contact' }];
 export default function page() {
   return (
     <>
-      <title>WordPress verkkosivut yrityksille.</title>
-      <meta
-        name="description"
-        content="Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?"
-      />
+      <title>Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksellesi</title>
+      <meta name="description" content="Tarvitseeko yrityksesi modernit WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ammattitaitoisen verkkosivuratkaisun." />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="keywords"
@@ -46,10 +43,10 @@ export default function page() {
         property="og:image"
         content="https://kaijukarainen.com/wordpressverkkosivut"
       />
-      <meta property="og:image:width" content="1640" />
-      <meta property="og:image:height" content="924" />
-      <meta property="og:image:alt" content="WordPress verkkosivut" />
-      <meta property="og:site_name" content="Kaijukarainen.com" />
+      <meta property="og:title" content="Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksellesi" />
+      <meta property="og:description" content="Tarvitseeko yrityksesi modernit WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ammattitaitoisen verkkosivuratkaisun." />
+      <meta property="og:image" content="https://kaijukarainen.com/wordpressverkkosivut" />
+      <meta property="og:site_name" content="kaijukarainen.com" />
       <meta property="og:locale" content="fi_FI" />
       <meta property="og:type" content="website" />
       <div>

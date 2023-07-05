@@ -32,14 +32,14 @@ const Home: React.FC = () => {
         }`}
       >
         <p className="font-bold pl-1">Kai Jukarainen</p>
-        <h1 className="text-7xl font-bold">
+        <p className="text-7xl font-bold">
           {t('wpHero')}
-          <p className="py-4 font-normal ml-2 text-xl max-w-[800px]">
+        </p>
+          <h1 className="py-4 font-normal ml-2 text-xl max-w-[800px]">
             {t('wpHeroTextXl1')}
             <br />
             {t('wpHeroTextXl2')}
-          </p>
-        </h1>
+          </h1>
         <div className="">
           <Link to="info2" smooth={true} duration={500}>
             <button className="font-semibold group border-slate-800 border-2 px-6 py-3 my-2 flex items-center hover:scale-110 duration-500 ml-2">
