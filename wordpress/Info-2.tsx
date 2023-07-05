@@ -86,7 +86,7 @@ const Info2: React.FC = () => {
                 <button 
                 onClick={() => setShowBookModal(true)}
                 className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
-                  Tilaa
+                  {t('subButton')}
                   <span>
                     <HiArrowNarrowRight className="ml-3" />
                   </span>
@@ -161,7 +161,7 @@ const Info2: React.FC = () => {
             <button 
                 onClick={() => setShowBookModal(true)}
                 className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
-                  Tilaa
+                  {t('subButton')}
                   <span>
                     <HiArrowNarrowRight className="ml-3" />
                   </span>

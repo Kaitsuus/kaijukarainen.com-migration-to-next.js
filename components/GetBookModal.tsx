@@ -74,16 +74,16 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
             {showThankYou ? (
               <div className="pb-8 pt-8">
               <p className="text-4xl text-slate-100 font-semibold py-4">
-                Thank you for submitting the form!
+              {t('headerBookModal')}
               </p>
               </div>
             ) : (
               <div className="pb-8 pt-8">
-                <p className="text-4xl font-bold inline border-b-4 border-orange-400 text-slate-100">
-                  WordPress & Woocorce playbook
+                <p className="text-2xl font-bold inline border-b-4 border-orange-400 text-slate-100">
+                {t('headerBookModal')} 
                 </p>
                 <p className="text-slate-100 font-semibold py-4">
-                  Tilaa täysin ilmainen wordpress & woocommerce play book
+                {t('headerBookModal')}
                 </p>
               </div>
             )}
@@ -97,7 +97,7 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
                 required
               />
               <button className="text-slate-100 font-semibold border-2 hover:scale-110 duration-500 px-4 py-3 my-8 mx-auto flex items-center">
-                get book
+              {t('subButton')}
               </button>
             </form>
           </div>
