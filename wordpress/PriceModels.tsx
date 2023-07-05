@@ -41,7 +41,9 @@ const PriceModels: React.FC = () => {
                 <li>{t('infoL4')}</li>
                 <li>{t('infoL5')}</li>
               </ul>
-              <p className="text-lg font-bold text-orange-400">{t('askMore')}</p>
+              <p className="text-lg font-bold text-orange-400">
+                {t('askMore')}
+              </p>
               <p className="mb-4 text-slate-100">{t('alv')}</p>
               <div className="pt-5"></div>
             </div>
@@ -69,8 +71,10 @@ const PriceModels: React.FC = () => {
                 <li>{t('infoL4')}</li>
                 <li>{t('infoL5')}</li>
               </ul>
-              <p className="text-lg font-bold text-orange-400">{t('askMore')}</p>
-              <p className='text-slate-100'>{t('alv')}</p>
+              <p className="text-lg font-bold text-orange-400">
+                {t('askMore')}
+              </p>
+              <p className="text-slate-100">{t('alv')}</p>
               <div className="pt-5"></div>
             </div>
             {/* Kauppa-container */}
@@ -96,7 +100,9 @@ const PriceModels: React.FC = () => {
                 <li>{t('kauppaL3')}</li>
                 <li>{t('infoL4')}</li>
               </ul>
-              <p className="text-lg font-bold text-orange-400">{t('askMore')}</p>
+              <p className="text-lg font-bold text-orange-400">
+                {t('askMore')}
+              </p>
               <p className="text-slate-100 mb-4">{t('alv')}</p>
             </div>
             {/* Custom-container */}
@@ -119,7 +125,9 @@ const PriceModels: React.FC = () => {
                 <li>{t('customL2')}</li>
                 <li>{t('customL3')}</li>
               </ul>
-              <p className="text-lg font-bold text-orange-400">{t('askMore')}</p>
+              <p className="text-lg font-bold text-orange-400">
+                {t('askMore')}
+              </p>
               <p className="mb-4 text-slate-100">{t('alv')}</p>
               <div className="pt-5"></div>
             </div>

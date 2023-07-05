@@ -51,7 +51,7 @@ const Info2: React.FC = () => {
               width={800}
               height={800}
               alt="moks"
-              className='mx-auto my-auto'
+              className="mx-auto my-auto"
             />
           </div>
         </div>
