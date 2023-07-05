@@ -81,5 +81,11 @@
   "videoHeader": "Sopisiko WordPress sinun yrityksellesi?",
   "videoText": "Videolla käydään läpi muutamia asioita miksi verkkosivut ovat yritykselle tärkeät nykypäivänä ja miksi WordPress on loistava vaihtoehto niiden toteutukseen.",
   "contact-me": "Yhteystiedot",
-  "privacyHead": "REKISTERISELOSTE"
+  "privacyHead": "REKISTERISELOSTE",
+  "playBookText": "Olen luonut kattavan oppaan WordPressin ja WooCommercen käyttöön! Olitpa pienyrittäjä tai uusi innokas yrittäjä, tämä opas auttaa sinua perustamaan ja optimoimaan verkkokauppasi näillä tehokkailla alustoilla. Tilaa nyt ilmainen PDF-tiedosto jonka avulla pääset alkuun ja voit parantaa näkyvyyttäsi verkossa ja lisätä myyntiäsi. Älä jää paitsi tästä mahdollisuudesta nostaa yritystoimintasi uusiin korkeuksiin!",
+  "playBookHead": "Käsikirja yrityssivuston rakentamiseen",
+  "headerBookModal": "WordPress & Woocommerce Käsikirja",
+  "bodyBookModal": "Tilaa täysin ilmainen Wordpress & Woocommerce Käsikirja",
+  "subBookModal": "Kiitos tilauksesta! Saat WordPress & Woocommerce Käsikirjan pian sähköpostiisi. (Muista tarkistaa myös. roskaposti)",
+  "subButton": "Tilaa"
 }
