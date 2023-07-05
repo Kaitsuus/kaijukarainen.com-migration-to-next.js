@@ -8,11 +8,7 @@ interface RootLayoutProps {
 }
 
 const inter = Inter({ subsets: ['latin'] });
-export const metadata = {
-  title: 'WordPress verkkosivut yrityksille',
-  description: 'Tarvitseeko yrityksesi tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi?',
-  keywords: 'WordPress, Woocommerce, verkkosivut, kotisivut, SEO, verkkosivut yrityksille, WordPress-verkkosivut, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset,'
-}
+
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
