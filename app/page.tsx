@@ -17,8 +17,8 @@ const navItems = [{ to: 'footer', label: 'Contact' }];
 export default function page() {
   return (
     <>
-      <title>Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksellesi</title>
-      <meta name="description" content="Tarvitseeko yrityksesi modernit WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ammattitaitoisen verkkosivuratkaisun." />
+      <title>Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksille</title>
+      <meta name="description" content="Tarvitseeko yrityksesi modernit verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ilmaisen kotisivu kartoituksen." />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="keywords"
