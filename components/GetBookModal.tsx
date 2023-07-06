@@ -13,31 +13,51 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
   const namePlaceholder = t('namePlaceholder') || undefined;
   const [email, setEmail] = useState('');
   const [showThankYou, setShowThankYou] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const submittedEmails = JSON.parse(localStorage.getItem('submittedEmails') || '[]');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-  
+
+    if (isSubmitting) {
+      return; // Do nothing if already submitting
+    }
+
+    if (submittedEmails.includes(email)) {
+      console.log('Email already submitted'); // Handle the case where email is already submitted
+      setTimeout(() => {
+        setShowThankYou(false);
+        setShowBookModal(false);
+      }, 3000);
+    }
+
     try {
+      setIsSubmitting(true);
+
       // Show the thank you message
       setShowThankYou(true);
-  
-      const response = await axios.post('/api/users', {
-        email,
-      });
-  
+
+      // Submit the email to the server
+      await axios.post('/api/users', { email });
+
       // Handle the response or perform any further actions
-      console.log(response.data);
-  
+
+      // Add the submitted email to the local storage
+      localStorage.setItem('submittedEmails', JSON.stringify([...submittedEmails, email]));
+
       // Reset the form
       setEmail('');
       setShowBookModal(false);
-  
+
       // Reset the thank you message after 3 seconds
       setTimeout(() => {
         setShowThankYou(false);
       }, 3000);
     } catch (error) {
       console.error(error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -96,8 +116,11 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
-              <button className="text-slate-100 font-semibold border-2 hover:scale-110 duration-500 px-4 py-3 my-8 mx-auto flex items-center">
-              {t('subButton')}
+              <button
+                className="text-slate-100 font-semibold border-2 hover:scale-110 duration-500 px-4 py-3 my-8 mx-auto flex items-center"
+                disabled={isSubmitting} // Disable the button while submitting
+              >
+                {t('subButton')}
               </button>
             </form>
           </div>
