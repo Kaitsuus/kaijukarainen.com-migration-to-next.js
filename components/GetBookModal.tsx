@@ -30,6 +30,7 @@ const Modal: React.FC<ModalProps> = ({ showBookModal, setShowBookModal }) => {
         setShowThankYou(false);
         setShowBookModal(false);
       }, 3000);
+      return;
     }
 
     try {
