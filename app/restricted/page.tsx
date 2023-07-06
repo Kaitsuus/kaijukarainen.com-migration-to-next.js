@@ -10,7 +10,7 @@ export default async function RestrictedPage() {
 
   // redirect to signin if there is no session.
   if (!session) {
-    const url = new URL('/api/auth/signin', 'http://localhost:3000/');
+    const url = new URL('/api/auth/signin', 'https://kaijukarainen.com/');
     url.searchParams.append('callbackUrl', '/restricted');
     redirect(url.toString());
   }
