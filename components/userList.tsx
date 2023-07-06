@@ -60,16 +60,24 @@ export default function UserList() {
   };
 
   return (
-    <div>
-      <h1>User List</h1>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-2xl font-bold text-center mb-4">User List</h1>
       {isLoading ? (
-        <p>Loading...</p>
+        <p className="text-center">Loading...</p>
       ) : (
-        <ul>
+        <ul className="space-y-4 text-black">
           {users.map((user: User) => (
-            <li key={user._id}>
-              Email: {user.email}, Role: {user.role}
-              <button onClick={user.onDelete}>
+            <li key={user._id} className="bg-white p-4 rounded-md shadow-md">
+              <div>
+                <span className="font-bold">Email:</span> {user.email}
+              </div>
+              <div>
+                <span className="font-bold">Role:</span> {user.role}
+              </div>
+              <button
+                onClick={user.onDelete}
+                className="mt-2 py-2 px-4 bg-red-500 text-white rounded-md hover:bg-red-600"
+              >
                 Delete
               </button>
             </li>

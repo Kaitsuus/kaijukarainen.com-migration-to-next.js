@@ -10,16 +10,18 @@ export default async function RestrictedPage() {
 
   // redirect to signin if there is no session.
   if (!session) {
-    const url = new URL('/api/auth/signin', 'http://kaijukarainen.com');
+    const url = new URL('/api/auth/signin', 'http://localhost:3000/');
     url.searchParams.append('callbackUrl', '/restricted');
     redirect(url.toString());
   }
 
   // display the page
   return (
-    <div>
-      <h1>Welcome to the Restricted Page, {session?.user?.email}</h1>
+    <div className='w-full h-screen container mx-auto px-4 py-8'>
+      <div className='w-full my-5'>
+      <h1 className='text-xl mx-5 my-5'>Welcome to the Restricted Page, {session?.user?.email}</h1>
       <UserList />
+      </div>
     </div>
   );
 }
