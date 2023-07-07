@@ -72,7 +72,7 @@ const Info2: React.FC = () => {
               className="mx-auto my-auto"
             />
           </div>
-          <div className="flex flex-col max-w-[800px] pt-16">
+          <div className="flex flex-col max-w-[800px] pt-16" id='playbook'>
             <h2 className="text-4xl sm:text-4xl font-bold">
               WordPress & Woocommerce <br/>
               {t('playBookHead')}
@@ -97,7 +97,7 @@ const Info2: React.FC = () => {
       </div>
 
       <div className="md:hidden w-full pb-5 p-4 flex mx-auto flex-col justify-center">
-        <h2 className="text-2xl font-bold">{t('wpMainTextHeader')}</h2>
+        <h2 className="text-2xl font-bold mt-5">{t('wpMainTextHeader')}</h2>
         <div
           className={`w-full grid grid-cols-1 sm:grid-cols-3 gap-4 text-center pt-5  mb-5 text-slate-100`}
         >
@@ -126,7 +126,7 @@ const Info2: React.FC = () => {
         </div>
         <div className="flex flex-row mt-5">
           <div className=" flex flex-col">
-            <div className="text-md pt-4">
+            <div className="pt-4">
               <p className="truncate whitespace-pre-wrap max-w-[1000px]">
                 {t('wpMainText')}
                 <br />
@@ -141,7 +141,7 @@ const Info2: React.FC = () => {
               </p>
               <button 
               onClick={() => setShowModal(true)}
-              className="font-semibold text-slate-100 bg-orange-400 group px-6 py-3 my-2 flex items-center hover:scale-110 duration-500">
+              className="font-semibold text-slate-100 bg-orange-400 group px-6 py-3 my-3 flex items-center hover:scale-110 duration-500">
               {t('contactME')}
               </button>
             </div>
@@ -151,16 +151,16 @@ const Info2: React.FC = () => {
         <div className="flex flex-row mt-5">
           <div className=" flex flex-col">
             <div className="text-md pt-4">
-              <h2 className="truncate font-bold whitespace-pre-wrap max-w-[1000px]">
+              <h2 className="text-lg truncate font-bold whitespace-pre-wrap max-w-[1000px]">
               WordPress & Woocommerce <br/>
               {t('playBookHead')}
               </h2>
-              <p>
+              <p className='mt-5' >
               {t('playBookText')}
               </p>
             <button 
                 onClick={() => setShowBookModal(true)}
-                className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ">
+                className="font-semibold group text-slate-100 bg-orange-400 px-6 py-3 mt-5 flex items-center  hover:scale-110 duration-500 ">
                   {t('subButton')}
                   <span>
                     <HiArrowNarrowRight className="ml-3" />

@@ -12,13 +12,14 @@ import CookieConsent from '@/utils/Cookies';
 import Booking from '@/wordpress/Booking';
 import CustomHead from '@/components/CustomHead';
 
-const navItems = [{ to: 'footer', label: 'Contact' }];
+
+const navItems = [{ to: 'priceModels', label: 'Hinnat' }, { to: 'playbook', label: 'Playbook' }, { to: 'footer', label: 'Contact' },];
 
 export default function page() {
   return (
     <>
       <title>Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksille</title>
-      <meta name="description" content="Tarvitseeko yrityksesi modernit verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ilmaisen kotisivu kartoituksen." />
+      <meta name="description" content="Modernit verkkosivu ratkaisut yrityksille ammattitaidolla. Ota yhteyttä ja varaa ilmainen kotisivukartoitus." />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="keywords"
@@ -37,7 +38,7 @@ export default function page() {
       />
       <meta
         property="og:description"
-        content="Tarvitseeko yrityksesi modernit WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ammattitaitoisen verkkosivuratkaisun."
+        content="Modernit verkkosivu ratkaisut yrityksille ammattitaidolla. Ota yhteyttä ja varaa ilmainen kotisivukartoitus."
       />
       <meta
         property="og:image"
