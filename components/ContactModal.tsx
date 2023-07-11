@@ -40,7 +40,7 @@ const Modal: React.FC<ModalProps> = ({ showModal, setShowModal }) => {
             <form
               id="Contact"
               method="POST"
-              action={`https://getform.io/f/${url}`}
+              action='https://getform.io/f/f88c2080-f48e-4e28-9f61-112bdf0761a2'
               className="flex flex-col max-w-[350px] w-full z-10 text-center"
             >
               <div className="pb-8 pt-8">
