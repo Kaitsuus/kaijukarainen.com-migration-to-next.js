@@ -43,10 +43,6 @@ export default function Home() {
         property="og:description"
         content="Olen erikoistunut rakentamaan ja kehittämään isoja sekä pieniä responsiivisia sovelluksia ja verkkosivuja. Minulla on vahva kokemus myös B2B & B2C myynistä, markkinoinnista ja maahantuonnista, sekä mainonnasta, sisällöntuotannosta ja logistiikasta. Toteutan ratkaisuja, jotka vastaavat yritysten, sekä käyttäjien tarpeita ammattitaidolla."
       />
-      <meta
-        property="og:image"
-        content="https://kaijukarainen.com/wordpressverkkosivut"
-      />
       <div>
         <CookiesProvider>
           <CustomHead slug="dev" />

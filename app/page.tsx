@@ -13,7 +13,7 @@ import Booking from '@/wordpress/Booking';
 import CustomHead from '@/components/CustomHead';
 
 
-const navItems = [{ to: 'priceModels', label: 'Hinnat' }, { to: 'playbook', label: 'Playbook' }, { to: 'footer', label: 'Contact' },];
+const navItems = [{ to: 'priceModels', label: 'Hinnat' }, { to: 'footer', label: 'Contact' },];
 
 export default function page() {
   return (
@@ -40,13 +40,10 @@ export default function page() {
         property="og:description"
         content="Modernit verkkosivu ratkaisut yrityksille ammattitaidolla. Ota yhteyttä ja varaa ilmainen kotisivukartoitus."
       />
-      <meta
-        property="og:image"
-        content="https://kaijukarainen.com/wordpressverkkosivut"
-      />
-      <meta property="og:title" content="Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksellesi" />
-      <meta property="og:description" content="Tarvitseeko yrityksesi modernit WordPress-verkkosivut, jotka houkuttelevat uusia asiakkaita ja kasvattavat myyntiäsi? Ota yhteyttä ja saat ammattitaitoisen verkkosivuratkaisun." />
-      <meta property="og:image" content="https://kaijukarainen.com/wordpressverkkosivut" />
+      <meta property="og:image" content="<generated>" />
+      <meta property="og:image:type" content="<generated>" />
+      <meta property="og:image:width" content="<generated>" />
+      <meta property="og:image:height" content="<generated>" />
       <meta property="og:site_name" content="kaijukarainen.com" />
       <meta property="og:locale" content="fi_FI" />
       <meta property="og:type" content="website" />

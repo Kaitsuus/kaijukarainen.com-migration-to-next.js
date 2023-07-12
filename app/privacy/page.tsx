@@ -32,10 +32,6 @@ export default function page() {
         property="og:description"
         content="Rekisteri- ja tietosuojaseloste."
       />
-      <meta
-        property="og:image"
-        content="https://kaijukarainen.com/wordpressverkkosivut"
-      />
       <CookiesProvider>
         <CookieConsent />
         <I18nextProvider i18n={i18n}>

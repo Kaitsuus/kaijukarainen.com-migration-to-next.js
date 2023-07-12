@@ -148,7 +148,7 @@ const Info2: React.FC = () => {
 
           </div>
         </div>
-        <div className="flex flex-row mt-5">
+        <div className="flex flex-row mt-5" id='playbook'>
           <div className=" flex flex-col">
             <div className="text-md pt-4">
               <h2 className="text-lg truncate font-bold whitespace-pre-wrap max-w-[1000px]">

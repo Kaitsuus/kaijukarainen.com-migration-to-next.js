@@ -4,15 +4,10 @@ import { Link } from 'react-scroll';
 import backgroundImage from '../public/assets/background.png';
 import { useTranslation } from 'react-i18next';
 import styles from './styles.module.css';
+import Image from 'next/image';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
-  const bgStyle: React.CSSProperties = {
-    backgroundImage: `url(${backgroundImage.src})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  };
-
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
@@ -22,25 +17,31 @@ const Home: React.FC = () => {
   return (
     <div
       id="home"
-      style={bgStyle}
       className="w-full h-screen text-slate-800 bg-slate-100"
     >
+      <Image
+        src={backgroundImage}
+        fill
+        style={{ objectFit: 'cover' }}
+        quality={100}
+        alt="Background Image"
+      />
       {/* container */}
       <div
         className={`hidden md:flex max-w-[1000px] xl:ml-40 mx-5 flex-col justify-center h-full pt-60 ${
           fadeIn ? 'fade-in' : ''
         }`}
       >
-        <p className="font-bold pl-1">Kai Jukarainen</p>
-        <p className="text-7xl font-bold">
+        <p className="font-bold pl-1 z-10">Kai Jukarainen</p>
+        <p className="text-7xl font-bold z-10">
           {t('wpHero')}
         </p>
-          <h1 className="py-4 font-normal ml-2 text-xl max-w-[800px]">
+          <h1 className="py-4 font-normal ml-2 text-xl max-w-[800px] z-10">
             {t('wpHeroTextXl1')}
             <br />
             {t('wpHeroTextXl2')}
           </h1>
-        <div className="">
+        <div className="z-10">
           <Link to="info2" smooth={true} duration={500}>
             <button className="font-semibold group border-slate-800 border-2 px-6 py-3 my-2 flex items-center hover:scale-110 duration-500 ml-2">
               {t('wpMore')}
@@ -86,16 +87,16 @@ const Home: React.FC = () => {
         </div>
       </div>
       {/* mobile container */}
-      <div className="md:hidden flex mx-5 flex-col justify-center h-full">
-        <p className="font-bold pl-1">Kai Jukarainen</p>
-        <h2 className="text-4xl font-bold">{t('wpHero')}</h2>
-        <h2 className="text-2xl  font-bold"></h2>
-        <p className="py-4 ml-2 text-xl max-w-[800px]">
+      <div className="md:hidden flex mx-5 flex-col justify-center h-full ">
+        <p className="font-bold pl-1 z-10">Kai Jukarainen</p>
+        <h2 className="text-4xl font-bold z-10">{t('wpHero')}</h2>
+        <h2 className="text-2xl  font-bold z-10"></h2>
+        <p className="py-4 ml-2 text-xl max-w-[800px] z-10">
           {t('wpHeroTextXl1')}
           <br />
           {t('wpHeroTextXl2')}
         </p>
-        <div>
+        <div className='z-10'>
           <Link to="info2" smooth={true} duration={500}>
             <button className="font-semibold border-slate-800 group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500 ml-2 ">
               {t('wpMore')}
