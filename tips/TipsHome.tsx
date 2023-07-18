@@ -82,7 +82,7 @@ const TipsHome: React.FC = () => {
           <span className="opacity-0 animate-pulse">_</span>
         </h2>
         <div className='z-10'>
-          <Link to="about" smooth={true} duration={500}>
+          <Link to="tips" smooth={true} duration={500}>
             <button className="text-orange-400 border-orange-400 font-semibold group border-2 px-6 py-3 my-2 flex items-center  hover:scale-110 duration-500">
               {'Latest'}
               <span className="group-hover:rotate-90 duration-300">
