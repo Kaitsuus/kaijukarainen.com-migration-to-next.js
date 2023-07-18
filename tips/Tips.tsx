@@ -54,7 +54,7 @@ const Tips: React.FC = () => {
                 src={vaihe.imgUrl}
                 width={800}
                 height={400}
-                alt="tablet"
+                alt="BlogImage"
                 className="mx-auto my-auto"
               />
             ) : (
@@ -81,7 +81,7 @@ const Tips: React.FC = () => {
                 src={data().imgUrl}
                 width={800}
                 height={400}
-                alt="tablet"
+                alt="BlogImage"
                 className="mx-auto my-auto"
         />
       </div>
