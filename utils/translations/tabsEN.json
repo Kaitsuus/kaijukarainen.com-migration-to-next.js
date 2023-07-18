@@ -1,0 +1,42 @@
+{
+  "Otsikko": "How to Make Elementor Tabs Responsive on Mobile Devices Without the Pro Version. 18.06.2023",
+  "Johdanto": "Elementor is a powerful tool for building web pages, allowing you to create stunning websites with ease. One of its popular add-ons is \"Tabs\" element, which organizes content into tabs to make the site more user-friendly. However, the default mobile responsiveness of Tabs can cause issues as the tabs might overlap the content on smaller screens, compromising the user experience. In this blog post, we will show you a simple solution to make Elementor Tabs responsive on mobile devices without the Pro version.",
+  "Vaiheet": [
+    {
+      "Vaihe": "Enable Nested Elements",
+      "Selitys": "Before fixing mobile responsiveness, make sure you have the \"Nested Elements\" option enabled in Elementor settings. This option is essential for our solution to work seamlessly.",
+      "imgUrl": "/assets/tabsNested.png"
+    },
+    {
+      "Vaihe": "Create Tabs",
+      "Selitys": "Elementor's Tabs element is a great way to efficiently organize your content. It presents information in the form of tabs, reducing clutter and improving user engagement. However, the default mobile responsiveness of this element has caused challenges for many users, as the tabs may stack under the content on smaller screens.",
+      "imgUrl": "/assets/tabs.png"
+    },
+    {
+      "Vaihe": "Fixing Mobile Responsiveness",
+      "Selitys": "To fix Elementor Tabs' mobile responsiveness issue without the Pro version, follow these simple steps:",
+      "imgUrl": "/assets/shortcode.png",
+      "Toimenpiteet": [
+        {
+          "Toimenpide": "Add an HTML Element",
+          "Selitys": "After creating the tabs, go to the section or column where the tabs are located. Now, add an HTML element next to the tabs element. The HTML element will serve as a container for our code that will override the default mobile behavior."
+        },
+        {
+          "Toimenpide": "Add Custom Code",
+          "Selitys": "Copy the following code into the new HTML element:",
+          "Koodi": "<style>\n@media (max-width: 767px) {\n  .e-n-tabs-mobile > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading {\n   display: flex;\n   flex-direction: column;\n   flex-wrap: wrap !important;\n}\n\n.elementor-widget-n-tabs .e-n-tabs-content .e-collapse.e-active {\n  display: none;\n}\n\n.elementor-widget-n-tabs .e-n-tabs-content .e-collapse:not(:first-child) {\n  display: none;\n}\n\ndiv.e-collapse:nth-child(1){display: none !important;}\n\n#tabs-services {\n    display: flex;\n    flex-wrap: nowrap;\n    overflow-x: auto;\n    width: auto;\n  }\n\n  #tabs-services .tab-title {\n    width: auto;\n    flex: 0 0 auto;\n\n  }\n  \n .e-n-tab-title {\n  flex-shrink: 0;\n  flex-basis: auto;\n}\n}\n</style>"
+        },
+        {
+          "Toimenpide": "Code Explanation",
+          "Selitys": "The custom CSS code targets screens with a maximum width of 767 pixels, typically corresponding to mobile devices' screens. It hides the desktop view tabs and displays the mobile view tabs. Additionally, it adjusts the visibility of tab contents based on the active tab, ensuring that only the selected tab's content is visible."
+        },
+        {
+          "Toimenpide": "Save and Preview",
+          "Selitys": "After adding the code, save your changes and preview your page on different mobile devices. Now, the tabs should appear neat and user-friendly, enhancing the user experience on all devices."
+        }
+      ]
+    }
+  ],
+  "imgUrl": "/assets/BEFORE.png",
+  "Yhteenveto": "Elementor's Tabs element is undoubtedly a fantastic tool for organizing content on your website. However, the default mobile responsiveness could be improved. By enabling nested elements and following our simple solution, you can make Elementor Tabs responsive on mobile devices without the Pro version. Enhance user experience and keep them engaged by implementing this quick fix to ensure your tabbed content looks great on all devices!"
+}

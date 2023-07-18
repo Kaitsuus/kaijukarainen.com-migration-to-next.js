@@ -1,0 +1,43 @@
+{
+    "Otsikko": "Kuinka Tehdä Elementorin välilehdet mobiililaitteissa responsiivisiksi ilman Pro-versiota. 18.06.2023",
+    "Johdanto": "Elementor on tehokas sivujen rakentamiseen tarkoitettu työkalu, joka mahdollistaa upeiden verkkosivustojen luomisen vaivattomasti. Yksi sen suosituista lisäosista on \"Välilehdet\" (Tabs) -elementti, joka mahdollistaa sisällön järjestämisen välilehtiin, tehdäkseen sivustosta käyttäjäystävällisemmän. Kuitenkin oletusarvoinen mobiiliresponsiivisuus Välilehtiä käytettäessä voi aiheuttaa ongelmia, sillä välilehdet saattavat päällekkäistyä sisällön alle pienemmillä näytöillä, mikä voi heikentää käyttäjäkokemusta. Tässä blogikirjoituksessa näytämme sinulle yksinkertaisen ratkaisun, kuinka tehdä Elementorin välilehdet mobiililaitteissa responsiivisiksi ilman Pro-versiota.",
+    "Vaiheet": [
+      {
+        "Vaihe": "Vaihe 1: Ota Käyttöön Pesiytyvät Elementit",
+        "Selitys": "Ennen mobiiliresponsiivisuuden korjaamista varmista, että sinulla on \"Nested Elements\" -ominaisuus käytössä Elementorin asetuksista. Tämä vaihtoehto on välttämätön, jotta ratkaisumme toimisi saumattomasti.",
+        "imgUrl": "/assets/tabsNested.png"
+      },
+      {
+        "Vaihe": "Vaihe 2: Luo Välilehdet",
+        "Selitys": "Elementorin Välilehdet-elementti on loistava tapa järjestää sisältösi tehokkaasti. Se mahdollistaa tietojen esittämisen välilehtien muodossa, vähentäen sotkua ja parantaen käyttäjien osallistumista. Kuitenkin tämän elementin oletusarvoinen mobiiliresponsiivisuus on tuottanut haasteita monille käyttäjille, sillä välilehdet saattavat taittua sisällön alle pienemmillä näytöillä.",
+        "imgUrl": "/assets/tabs.png"
+      },
+      {
+        "Vaihe": "Vaihe 3: Mobiiliresponsiivisuuden Korjaaminen",
+        "Selitys": "Korjataksesi Elementorin välilehtien mobiiliresponsiivisuusongelman ilman Pro-versiota, seuraa näitä yksinkertaisia ​​vaiheita:",
+        "imgUrl": "/assets/shortcode.png",
+        "Toimenpiteet": [
+          {
+            "Toimenpide": "Lisää HTML-elementti:",
+            "Selitys": "Luotuasi välilehdet, siirry osioon tai sarakkeeseen, jossa välilehdet ovat. Lisää nyt HTML-elementti välilehti-elementin vieressä. HTML-elementti toimii säiliönä omalle koodillemme, joka ohittaa oletusarvoisen mobiilikäyttäytymisen."
+          },
+          {
+            "Toimenpide": "Lisää Mukautettu Koodi:",
+            "Selitys": "Kopioi uuteen HTML-elementtiin seuraava koodi:",
+            "Koodi": "<style>\n@media (max-width: 767px) {\n  .e-n-tabs-mobile > .elementor-widget-container > .e-n-tabs > .e-n-tabs-heading {\n   display: flex;\n   flex-direction: column;\n   flex-wrap: wrap !important;\n}\n\n.elementor-widget-n-tabs .e-n-tabs-content .e-collapse.e-active {\n  display: none;\n}\n\n.elementor-widget-n-tabs .e-n-tabs-content .e-collapse:not(:first-child) {\n  display: none;\n}\n\ndiv.e-collapse:nth-child(1){display: none !important;}\n\n#tabs-services {\n    display: flex;\n    flex-wrap: nowrap;\n    overflow-x: auto;\n    width: auto;\n  }\n\n  #tabs-services .tab-title {\n    width: auto;\n    flex: 0 0 auto;\n\n  }\n  \n .e-n-tab-title {\n  flex-shrink: 0;\n  flex-basis: auto;\n}\n}\n</style>"
+          },
+          {
+            "Toimenpide": "Koodin Selitys:",
+            "Selitys": "Mukautettu CSS-koodi kohdistuu näyttöihin, joiden leveys on enintään 767 pikseliä, mikä vastaa tyypillisesti mobiililaitteiden näyttöjä. Se piilottaa työpöytänäkymän välilehdet ja näyttää mobiilinäkymän välilehdet. Lisäksi se muuttaa välilehtien sisältöjen näkyvyyttä aktiivisen välilehden mukaan, varmistaen, että näkyvillä on vain valitun välilehden sisältö."
+          },
+          {
+            "Toimenpide": "Tallenna ja Esikatsele:",
+            "Selitys": "Lisättyäsi koodin, tallenna tekemäsi muutokset ja esikatsele sivuasi eri mobiililaitteilla. Nyt välilehdet tulisi näyttää siistiltä ja käyttäjäystävällisiltä, parantaen kaikkien laitteiden käyttökokemusta."
+          }
+        ]
+      }
+    ],
+    "imgUrl": "/assets/BEFORE.png",
+    "Yhteenveto": "Elementorin Välilehdet-elementti on epäilemättä upea työkalu sisällön järjestämiseen verkkosivustollasi. Kuitenkin oletusarvoinen mobiiliresponsiivisuus voisi olla parempi. Aktivoimalla pesiytyvät elementit ja seuraamalla yksinkertaista ratkaisuamme voit tehdä Elementorin välilehdet mobiililaitteissa responsiivisiksi ilman Pro-versiota. Paranna käyttäjien kokemusta ja pidä heidät osallistuneina toteuttamalla tämä nopea korjaus, jotta välilehdillä varustettu sisältö näyttää upealta kaikilla laitteilla!"
+  }
+  

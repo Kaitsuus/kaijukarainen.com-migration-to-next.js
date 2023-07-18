@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './dev/**/*.{js,ts,jsx,tsx,mdx}',
+    './tips/**/*.{js,ts,jsx,tsx,mdx}',
     './wordpress/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {

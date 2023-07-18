@@ -19,11 +19,11 @@ export default function page() {
   return (
     <>
       <title>Tyylikkäät ja käyttäjäystävälliset WordPress-verkkosivut yrityksille</title>
-      <meta name="description" content="Modernit verkkosivu ratkaisut yrityksille ammattitaidolla. Ota yhteyttä ja varaa ilmainen kotisivukartoitus." />
+      <meta name="description" content="Tarjoamme moderneja verkkosivuratkaisuja yrityksille ammattitaidolla. Ota yhteyttä ja varaa ilmainen kotisivukartoitus." />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
         name="keywords"
-        content="WordPress, Woocommerce, verkkosivut, SEO, verkkosivut yrityksille, WordPress-verkkosivut, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset,"
+        content="WordPress, Woocommerce, verkkosivut, SEO, verkkosivut yrityksille, WordPress-verkkosivut, web designer, wordpress developement, web developement, ohjelmisto kehittäjä, verkkosivu toteutukset, wordpress tips, wordpress, kotisivut"
       />
       <meta name="author" content="Kai Jukarainen" />
       <link
