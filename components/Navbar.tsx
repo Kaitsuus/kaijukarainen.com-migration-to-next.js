@@ -78,6 +78,9 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
         <li className="hover:text-orange-400 hover:scale-110 duration-500 hover:cursor-pointer">
           <a href="dev">Dev</a>
         </li>
+        <li className="hover:text-orange-400 hover:scale-110 duration-500 hover:cursor-pointer">
+          <a href="tips">Tips & Tricks</a>
+        </li>
         {/*Link menu*/}
         {navItems.map((item) => (
           <li
@@ -120,6 +123,11 @@ const NavBar = ({ navItems }: NavBarProps): JSX.Element => {
         <li className="py-6 text-4xl">
           <a onClick={handleClick} href="dev">
             Dev
+          </a>
+        </li>
+        <li className="py-6 text-4xl">
+          <a onClick={handleClick} href="tips">
+            Tips & Tricks
           </a>
         </li>
         {navItems.map((item) => (
