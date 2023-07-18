@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import 'tailwindcss/tailwind.css';
-import EnData from '../utils/translations/tabsEn.json';
+import EnData from '../utils/translations/tabsEN.json';
 import FiData from '../utils/translations/tabsFi.json';
 import Image from 'next/image';
-import placeholderImageUrl from '../public/assets/moks.png';
+
 
 interface Step {
   Vaihe: string;
